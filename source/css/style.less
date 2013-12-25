@@ -1,1 +1,180 @@
-﻿/**/
+﻿
+// --------------
+// Variables
+// --------------
+
+
+// Fonts
+@headerfont: Georgia;
+@paragraphfont: "Times New Roman";
+@fontlinks:Arial;
+
+
+@fontcolor: #fff;
+@h1size: 5.5em;
+@basecolor: #000;
+@baseblue:#262d35;
+
+
+// ----------
+// Mixins
+// ----------
+
+.sectionClass(@height, @backgroundcolor){
+	width: 100%;
+	height: @height;
+	float: left;
+	background-color: @backgroundcolor;
+}
+
+.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
+    background-color: @start;
+    background-image: -webkit-linear-gradient(@origin, @start, @stop);
+    background-image: -moz-linear-gradient(@origin, @start, @stop);
+    background-image: -o-linear-gradient(@origin, @start, @stop);
+    background-image: -ms-linear-gradient(@origin, @start, @stop);
+    background-image: linear-gradient(@origin, @start, @stop);
+}
+
+.marginFix(){
+	  margin-top: -10px;
+  margin-left: -7px;
+}
+
+.textPadding(){
+			padding-right: 25px;
+		padding-left: 25px;
+}
+
+
+// ----------
+// CSS
+// ----------
+
+body{
+	background-color: @basecolor;
+	overflow-x: hidden;
+}
+
+h1, {
+	color:@fontcolor;
+	font-family: @headerfont;
+	font-size: @h1size;
+}
+
+h2{
+		color:@fontcolor;
+	font-family: @headerfont;
+	font-size: @h1size *0.5;
+}
+
+h3{
+		color:@fontcolor;
+	font-family: @headerfont;
+	font-size: @h1size *0.3;	
+}
+
+
+p{
+	font-family: @paragraphfont;
+	color: @fontcolor;
+	.textPadding()
+}
+
+
+#wrp{
+height: auto;
+width: 100%;
+}
+
+#top{
+	position: absolute;
+	z-index: 1;
+	height: 45px;
+	width: 100%;
+	background-color: @baseblue * 0.5;
+	.marginFix;
+}
+
+nav{
+	float: right;
+	margin-top: 10px;
+.textPadding;
+color: @fontcolor;
+a{
+color: @fontcolor;
+font-family: @fontlinks;
+font-weight: bold;
+text-decoration: none;
+}
+}
+
+header{
+	position: absolute;
+	margin-left: 12%;
+	margin-top:7%; 
+	z-index: 1;
+	width: 525px;
+	height: auto;		
+	float: left;
+	background-color: @baseblue *0.3;	
+}
+
+#title{	
+padding-right: 15px;
+		padding-left: 25px;
+		margin-top: -25px;
+	float: left;	
+}
+
+#subtext{
+	height: auto;
+	width: 100%;
+	float: left;
+	margin-top: -25px;
+	padding-bottom: 25px;
+
+	p{
+.textPadding;
+	}
+}
+
+#text1{
+		position: absolute;
+	z-index: 1;
+margin-left: 85%;
+margin-top: 30%;
+	width: 150px;
+height: auto;
+background-color: @baseblue;
+}
+
+
+
+#coloroverlay{
+	width: 100%;
+	height: 75%;
+	.gradient(bottom, rgba(0, 0, 0, 0.0), #000);
+	opacity: 0.8;
+	position: absolute;
+		z-index: 0;
+	.marginFix;
+}
+
+#headvideo {
+	position: absolute;
+	z-index: -1;
+	.marginFix;
+  height: auto;
+  width: 101.5%; 
+  float: left;
+}
+
+#sec1{
+	.sectionClass(900px, @baseblue * 1.25);
+	position: absolute;
+	margin-left: -8px;
+	z-index: -1;
+	margin-top: 65%;
+
+}
