@@ -16,12 +16,21 @@ h3 {
   color: white;
   font-family: Georgia;
   font-size: 1.65em;
+  padding-right: 25px;
+  padding-left: 25px;
 }
-p {
+.bread {
   font-family: "Times New Roman";
   color: white;
   padding-right: 25px;
   padding-left: 25px;
+}
+.quote {
+  color: white;
+  font-family: Georgia;
+  font-size: 2.75em;
+  font-style: italic;
+  text-align: center;
 }
 #wrp {
   height: auto;
@@ -79,11 +88,16 @@ header {
 #text1 {
   position: absolute;
   z-index: 1;
-  margin-left: 85%;
-  margin-top: 30%;
-  width: 150px;
+  margin-left: 77%;
+  margin-top: 32%;
+  width: 250px;
   height: auto;
   background-color: #262d35;
+}
+.boxFooter {
+  width: 100%;
+  height: 20px;
+  background-color: #352726;
 }
 #coloroverlay {
   width: 100%;
@@ -111,11 +125,135 @@ header {
 }
 #sec1 {
   width: 100%;
-  height: 900px;
+  height: 1300px;
   float: left;
   background-color: #303842;
   position: absolute;
   margin-left: -8px;
   z-index: -1;
   margin-top: 65%;
+}
+#nfissionheader {
+  position: absolute;
+  width: 550px;
+  height: auto;
+  margin-left: 7%;
+  margin-top: 7%;
+}
+#nfissionheader h2 {
+  font-family: 'Delius Unicase', cursive;
+}
+.chalkheader {
+  font-family: 'Delius Unicase', cursive;
+}
+.chalktext {
+  font-family: 'Delius Unicase', cursive;
+  color: white;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+#nfission1 {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  margin-left: 70%;
+  margin-top: 3%;
+}
+#nfission2 {
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  margin-left: 20%;
+  margin-top: 34%;
+}
+#nfission3 {
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  margin-left: 80%;
+  margin-top: 50%;
+}
+#fissionwpr {
+  height: 1300px;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url('../pics/chalkboard.jpg');
+  background-size: cover;
+}
+#neutron {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  margin-left: 47.5%;
+  background-color: #58807e;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: solid 15px #496b69;
+}
+#U235 {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  margin-top: 225px;
+  margin-right: 50%;
+  margin-left: 40%;
+  background-color: #586b80;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: solid 15px #49596b;
+}
+#U236 {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  margin-top: 225px;
+  margin-right: 50%;
+  margin-left: 40%;
+  background-color: #a073ca;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: solid 15px #8560a8;
+}
+#fission1 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  margin-top: 750px;
+  margin-left: 40%;
+  background-color: #00599a;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: solid 15px #004a80;
+}
+#fission2 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  margin-top: 750px;
+  margin-left: 60%;
+  background-color: #00599a;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: solid 15px #004a80;
 }
