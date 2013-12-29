@@ -51,6 +51,11 @@
  	margin-left: -7px;
 }
 
+.marginFixSection(){
+	padding-right: 18px;
+	margin-left:-10px;
+}
+
 .textPadding(){
 	padding-right: 25px;
 	padding-left: 25px;
@@ -60,6 +65,15 @@
 	border: solid @width @color;
 }
 
+.dimensions(@height, @width){
+	height: @height;
+	width: @width;
+}
+
+.positionCenter(){
+	margin-right: auto;
+	margin-left: auto;
+}
 
 // ----------
 // CSS
@@ -106,7 +120,7 @@ h3{
 
 
 #wrp{
-	height: auto;
+	height: 500%;
 	width: 100%;
 }
 
@@ -198,35 +212,14 @@ header{
 }
 
 #sec1{
-	.sectionClass(1300px, @baseblue * 1.25);
+	.sectionClass(auto, @baseblue * 1.25);
 	position: absolute;
 	margin-left: -8px;
 	z-index: -1;
-	margin-top: 65%;	
+	margin-top: 75%;	
 
 }
 
-#nfissionheader{
-	position: absolute;
-	width: 550px;
-	height: auto;
-	margin-left: 7%;
-	margin-top: 7%;
-
-	h2{
-		font-family: @chalkboardfont;
-	}
-}
-
-.chalkheader{
-	font-family: @chalkboardfont;
-}
-
-.chalktext{
-	font-family: @chalkboardfont;
-	color: white;
-	.textPadding()
-}
 
 #nfission1{
 	position: absolute;
@@ -261,60 +254,128 @@ header{
 	background-size: cover;
 }
 
-#neutron{
-	position: absolute;	
-	height: 80px;
-	width: 80px;
-	margin-left: 47.5%;
+
+
+
+//Restart, Lets do this!!!!!
+
+#sec1{
+	position: absolute;
+	z-index: 1;
+	.dimensions(2000px, 100%);	
+	float: left;
+	background-image: url("../pics/chalkboard.jpg");	
+	background-size: cover;
+	margin-top: 50%;
+	.marginFixSection();
+
+	img{				
+		position: absolute;
+		.dimensions(300px, auto);
+		.border(10px, #fff);	
+		top: 25px;
+		right: 45px;
+	}
+}
+
+.chalkHeader{
+	font-family: @chalkboardfont;
+	.textPadding();
+}
+
+.chalkText{
+	font-family: @chalkboardfont;
+	color: white;
+	.textPadding();
+	margin-top: 15px;
+}
+
+#chalkHeader{	
+	.dimensions(auto, 50%);		
+}
+
+#chalkText1{	
+	.dimensions(auto, 50%);	
+}
+
+#chalkText2{	
+	.dimensions(auto, 50%);		
+}
+
+#neutron{		
+	position: absolute;
+	.dimensions(80px, 80px);
+	margin-left: 50%;
 	background-color: #496b69 * 1.2;
 	.border-radius(50%);
 	.border(15px, #496b69);
 }
 
-#U235{
-	position: absolute;	
-	height: 350px;
-	width: 350px;
-	margin-top: 225px;
-	margin-right: 50%;
-	margin-left: 40%;
+#u235{
+	position: absolute;
+	.dimensions(350px, 350px);
+	margin-left: 43%;
 	background-color: #49596b * 1.2;
+	margin-top: 90px;
 	.border-radius(50%);	
 	.border(15px, #49596b);
 }
 
-#U236{
-	position: absolute;	
-	height: 350px;
-	width: 350px;
-	margin-top: 225px;
-	margin-right: 50%;
-	margin-left: 40%;	
+#u236{
+	position: absolute;
+	.dimensions(350px, 350px);
+	margin-left: 43%;
 	background-color: #8560a8 * 1.2;
+	margin-top: 90px;
 	.border-radius(50%);	
 	.border(15px, #8560a8);
 }
 
 #fission1{
-	position: absolute;	
-	height: 100px;
-	width: 100px;	
-	margin-top: 750px;
+	position: absolute;
+	.dimensions(100px, 100px);
 	margin-left: 40%;	
+		margin-top: 750px;
+
 	background-color: #004a80 * 1.2;
 	.border-radius(50%);	
 	.border(15px, #004a80);
 }
 
 #fission2{
-	position: absolute;	
-	height: 100px;
-	width: 100px;	
+	position: absolute;
+	.dimensions(100px, 100px);
+	margin-left: 55%;	
 	margin-top: 750px;
-	margin-left: 60%;	
 	background-color: #004a80 * 1.2;
 	.border-radius(50%);	
 	.border(15px, #004a80);
 }
 
+#nfissionheader{
+	.dimensions(auto, 550px);	
+	margin-left: 7%;
+	margin-top: 7%;
+}
 
+#chalkText3{	
+	position: absolute;
+		margin-left: 7%;
+	.dimensions(auto, 25%);		
+}
+
+#chalkText4{	
+	position: absolute;
+		right: 7%;
+	.dimensions(auto, 25%);	
+		margin-top: 475px;
+	
+}
+
+#chalkText5{	
+	position: absolute;
+		margin-left: 7%;
+	.dimensions(auto, 25%);	
+	margin-top: 800px;
+	
+}

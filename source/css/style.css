@@ -33,7 +33,7 @@ h3 {
   text-align: center;
 }
 #wrp {
-  height: auto;
+  height: 500%;
   width: 100%;
 }
 #top {
@@ -125,32 +125,13 @@ header {
 }
 #sec1 {
   width: 100%;
-  height: 1300px;
+  height: auto;
   float: left;
   background-color: #303842;
   position: absolute;
   margin-left: -8px;
   z-index: -1;
-  margin-top: 65%;
-}
-#nfissionheader {
-  position: absolute;
-  width: 550px;
-  height: auto;
-  margin-left: 7%;
-  margin-top: 7%;
-}
-#nfissionheader h2 {
-  font-family: 'Delius Unicase', cursive;
-}
-.chalkheader {
-  font-family: 'Delius Unicase', cursive;
-}
-.chalktext {
-  font-family: 'Delius Unicase', cursive;
-  color: white;
-  padding-right: 25px;
-  padding-left: 25px;
+  margin-top: 75%;
 }
 #nfission1 {
   position: absolute;
@@ -181,11 +162,55 @@ header {
   background-image: url('../pics/chalkboard.jpg');
   background-size: cover;
 }
+#sec1 {
+  position: absolute;
+  z-index: 1;
+  height: 2000px;
+  width: 100%;
+  float: left;
+  background-image: url("../pics/chalkboard.jpg");
+  background-size: cover;
+  margin-top: 50%;
+  padding-right: 18px;
+  margin-left: -10px;
+}
+#sec1 img {
+  position: absolute;
+  height: 300px;
+  width: auto;
+  border: solid 10px white;
+  top: 25px;
+  right: 45px;
+}
+.chalkHeader {
+  font-family: 'Delius Unicase', cursive;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.chalkText {
+  font-family: 'Delius Unicase', cursive;
+  color: white;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-top: 15px;
+}
+#chalkHeader {
+  height: auto;
+  width: 50%;
+}
+#chalkText1 {
+  height: auto;
+  width: 50%;
+}
+#chalkText2 {
+  height: auto;
+  width: 50%;
+}
 #neutron {
   position: absolute;
   height: 80px;
   width: 80px;
-  margin-left: 47.5%;
+  margin-left: 50%;
   background-color: #58807e;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -195,14 +220,13 @@ header {
   background-clip: padding-box;
   border: solid 15px #496b69;
 }
-#U235 {
+#u235 {
   position: absolute;
   height: 350px;
   width: 350px;
-  margin-top: 225px;
-  margin-right: 50%;
-  margin-left: 40%;
+  margin-left: 43%;
   background-color: #586b80;
+  margin-top: 90px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -211,14 +235,13 @@ header {
   background-clip: padding-box;
   border: solid 15px #49596b;
 }
-#U236 {
+#u236 {
   position: absolute;
   height: 350px;
   width: 350px;
-  margin-top: 225px;
-  margin-right: 50%;
-  margin-left: 40%;
+  margin-left: 43%;
   background-color: #a073ca;
+  margin-top: 90px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -231,8 +254,8 @@ header {
   position: absolute;
   height: 100px;
   width: 100px;
-  margin-top: 750px;
   margin-left: 40%;
+  margin-top: 750px;
   background-color: #00599a;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -246,8 +269,8 @@ header {
   position: absolute;
   height: 100px;
   width: 100px;
+  margin-left: 55%;
   margin-top: 750px;
-  margin-left: 60%;
   background-color: #00599a;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -256,4 +279,30 @@ header {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: solid 15px #004a80;
+}
+#nfissionheader {
+  height: auto;
+  width: 550px;
+  margin-left: 7%;
+  margin-top: 7%;
+}
+#chalkText3 {
+  position: absolute;
+  margin-left: 7%;
+  height: auto;
+  width: 25%;
+}
+#chalkText4 {
+  position: absolute;
+  right: 7%;
+  height: auto;
+  width: 25%;
+  margin-top: 475px;
+}
+#chalkText5 {
+  position: absolute;
+  margin-left: 7%;
+  height: auto;
+  width: 25%;
+  margin-top: 800px;
 }

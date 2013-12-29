@@ -1,0 +1,7 @@
+Inga "position:absolute" på text-elements.
+
+"px" på "imag".
+
+"z-index: 1" på "section"-elements.
+
+"margin" behövs inte vid "data-" användning.
