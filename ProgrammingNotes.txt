@@ -1,7 +1,20 @@
-Inga "position:absolute" på text-elements.
+﻿Inga "position:absolute" på text-elements.
 
 "px" på "imag".
 
 "z-index: 1" på "section"-elements.
 
 "margin" behövs inte vid "data-" användning.
+
+Inte använda samma typsnitt i rubrik som brödtext
+
+Göra bilder mer "exotiska" (rotation mm.)
+
+"Ram" runt alla textrutor.
+
+
+"Best viewed on high-resuolution screens."
+
+
+0,5625
+0,5622254758418741

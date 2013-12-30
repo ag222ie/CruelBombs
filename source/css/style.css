@@ -19,6 +19,13 @@ h3 {
   padding-right: 25px;
   padding-left: 25px;
 }
+h4 {
+  color: white;
+  font-family: Georgia;
+  font-size: 1.1em;
+  padding-right: 25px;
+  padding-left: 25px;
+}
 .bread {
   font-family: "Times New Roman";
   color: white;
@@ -33,7 +40,7 @@ h3 {
   text-align: center;
 }
 #wrp {
-  height: 500%;
+  height: auto;
   width: 100%;
 }
 #top {
@@ -123,54 +130,22 @@ header {
   width: 101.5%;
   float: left;
 }
-#sec1 {
+#cont {
+  position: absolute;
+  height: auto;
   width: 100%;
-  height: auto;
-  float: left;
-  background-color: #303842;
-  position: absolute;
-  margin-left: -8px;
-  z-index: -1;
-  margin-top: 75%;
-}
-#nfission1 {
-  position: absolute;
-  width: 250px;
-  height: auto;
-  margin-left: 70%;
-  margin-top: 3%;
-}
-#nfission2 {
-  position: absolute;
-  width: 250px;
-  height: 100px;
-  margin-left: 20%;
-  margin-top: 34%;
-}
-#nfission3 {
-  position: absolute;
-  width: 250px;
-  height: 100px;
-  margin-left: 80%;
   margin-top: 50%;
-}
-#fissionwpr {
-  height: 1300px;
-  width: auto;
-  margin-right: auto;
-  margin-left: auto;
-  background-image: url('../pics/chalkboard.jpg');
-  background-size: cover;
 }
 #sec1 {
   position: absolute;
   z-index: 1;
-  height: 2000px;
+  height: 1750px;
   width: 100%;
   float: left;
   background-image: url("../pics/chalkboard.jpg");
   background-size: cover;
-  margin-top: 50%;
+  /*margin-top: 50%;*/
+
   padding-right: 18px;
   margin-left: -10px;
 }
@@ -181,6 +156,10 @@ header {
   border: solid 10px white;
   top: 25px;
   right: 45px;
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
 }
 .chalkHeader {
   font-family: 'Delius Unicase', cursive;
@@ -198,11 +177,11 @@ header {
   height: auto;
   width: 50%;
 }
-#chalkText1 {
+#infobit1 {
   height: auto;
   width: 50%;
 }
-#chalkText2 {
+#infobit2 {
   height: auto;
   width: 50%;
 }
@@ -305,4 +284,103 @@ header {
   height: auto;
   width: 25%;
   margin-top: 800px;
+}
+#sec2 {
+  position: absolute;
+  z-index: 1;
+  height: 550px;
+  width: 100%;
+  float: left;
+  background-color: #0b0e10;
+  margin-top: 1750px;
+  padding-right: 18px;
+  margin-left: -10px;
+}
+.info {
+  font-family: Arial;
+  font-size: 1.21em;
+  color: white;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+#einsteinletterquotewrp {
+  height: auto;
+  width: 75%;
+  float: left;
+}
+#infobit3 {
+  height: auto;
+  width: 25%;
+  float: left;
+  padding-top: 67px;
+  background-color: black;
+}
+#sec3 {
+  position: absolute;
+  z-index: 1;
+  height: 1250px;
+  width: 100%;
+  float: left;
+  margin-top: calc(2300px);
+  background-color: #afb7b5;
+  padding-right: 18px;
+  margin-left: -10px;
+}
+#sec3 .bread {
+  font-family: Arial;
+  font-size: 0.935em;
+}
+#map {
+  position: absolute;
+  z-index: 1;
+  height: 1050px;
+  width: 100%;
+  background-image: url('../pics/usmap.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#mheader {
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  z-index: 2;
+  height: auto;
+  width: 35%;
+  background-color: #7a807f;
+}
+#richland {
+  position: absolute;
+  top: 12%;
+  left: 18%;
+  z-index: 2;
+  height: auto;
+  width: 200px;
+  background-color: #0b0e10;
+}
+#alamos {
+  position: absolute;
+  top: 46%;
+  left: 34.5%;
+  z-index: 2;
+  height: auto;
+  width: 200px;
+  background-color: #0b0e10;
+}
+#oakridge {
+  position: absolute;
+  top: 43%;
+  left: 53%;
+  z-index: 2;
+  height: auto;
+  width: 200px;
+  background-color: #0b0e10;
+}
+#minfo1 {
+  position: absolute;
+  top: 70%;
+  left: 45px;
+  z-index: 2;
+  height: auto;
+  width: 35%;
+  background-color: #7a807f;
 }

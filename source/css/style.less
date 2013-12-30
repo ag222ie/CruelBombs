@@ -6,6 +6,7 @@
 
 // Fonts
 @headerfont: Georgia;
+@sansserif: Arial;
 @paragraphfont: "Times New Roman";
 @fontlinks:Arial;
 @chalkboardfont:'Delius Unicase', cursive;
@@ -15,6 +16,7 @@
 @h1size: 5.5em;
 @basecolor: #000;
 @baseblue:#262d35;
+@basegrey:#afb7b5;
 
 
 // ----------
@@ -75,6 +77,13 @@
 	margin-left: auto;
 }
 
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: 	 rotate(@deg);
+	-ms-transform: 		 rotate(@deg);
+	-o-transform: 		 rotate(@deg);
+}
+
 // ----------
 // CSS
 // ----------
@@ -103,6 +112,13 @@ h3{
 	.textPadding();	
 }
 
+h4{
+	color:@fontcolor;
+	font-family: @headerfont;
+	font-size: @h1size *0.2;
+	.textPadding();	
+}
+
 
 .bread{
 	font-family: @paragraphfont;
@@ -120,7 +136,7 @@ h3{
 
 
 #wrp{
-	height: 500%;
+	height: auto;
 	width: 100%;
 }
 
@@ -211,62 +227,28 @@ header{
  	float: left;
 }
 
-#sec1{
-	.sectionClass(auto, @baseblue * 1.25);
-	position: absolute;
-	margin-left: -8px;
-	z-index: -1;
-	margin-top: 75%;	
-
-}
 
 
-#nfission1{
-	position: absolute;
-	width: 250px;
-	height: auto;	
-	margin-left: 70%;
-	margin-top: 3%;
-}
-
-#nfission2{
-	position: absolute;
-	width: 250px;
-	height: 100px;	
-	margin-left: 20%;
-	margin-top: 34%;	
-}
-
-#nfission3{
-	position: absolute;
-	width: 250px;
-	height: 100px;	
-	margin-left: 80%;
-	margin-top: 50%;		
-}
-
-#fissionwpr{
-	height: 1300px;
-	width: auto;
-	margin-right: auto;
-	margin-left: auto;	
-	background-image: url('../pics/chalkboard.jpg');
-	background-size: cover;
-}
 
 
 
 
 //Restart, Lets do this!!!!!
 
+#cont{
+	position: absolute;
+	.dimensions(auto, 100%);		
+	margin-top: 50%;
+}
+
 #sec1{
 	position: absolute;
 	z-index: 1;
-	.dimensions(2000px, 100%);	
+	.dimensions(1750px, 100%);	
 	float: left;
 	background-image: url("../pics/chalkboard.jpg");	
 	background-size: cover;
-	margin-top: 50%;
+	/*margin-top: 50%;*/
 	.marginFixSection();
 
 	img{				
@@ -275,6 +257,7 @@ header{
 		.border(10px, #fff);	
 		top: 25px;
 		right: 45px;
+		.rotate(-7deg);
 	}
 }
 
@@ -294,11 +277,11 @@ header{
 	.dimensions(auto, 50%);		
 }
 
-#chalkText1{	
+#infobit1{	
 	.dimensions(auto, 50%);	
 }
 
-#chalkText2{	
+#infobit2{	
 	.dimensions(auto, 50%);		
 }
 
@@ -368,8 +351,7 @@ header{
 	position: absolute;
 		right: 7%;
 	.dimensions(auto, 25%);	
-		margin-top: 475px;
-	
+		margin-top: 475px;	
 }
 
 #chalkText5{	
@@ -377,5 +359,106 @@ header{
 		margin-left: 7%;
 	.dimensions(auto, 25%);	
 	margin-top: 800px;
-	
+}
+
+#sec2{
+	position: absolute;
+	z-index: 1;
+	.dimensions(550px, 100%);	
+	float: left;
+	background-color:@baseblue * 0.3;
+	margin-top: 1750px;
+	.marginFixSection();
+	}
+
+
+.info{
+	font-family: @sansserif;
+	font-size: @h1size * 0.22;
+	color:@fontcolor;
+	.textPadding();
+}	
+
+#einsteinletterquotewrp{
+	.dimensions(auto, 75%);
+	float: left;
+}
+
+#infobit3{
+	.dimensions(auto, 25%);
+	float: left;
+	padding-top: 67px;
+	background-color: @basecolor * 3;
+}
+
+#sec3{
+	position: absolute;
+	z-index: 1;
+	.dimensions(1250px, 100%);	
+	float: left;
+	margin-top: calc(1750px + 550px);
+	background-color: @basegrey;
+	.marginFixSection();
+
+	.bread{
+		font-family: @sansserif;
+		font-size: @h1size * 0.17;
+
+	}
+}
+
+#map{
+	position: absolute;
+	z-index: 1;
+	.dimensions(1050px, 100%);	
+	background-image:url('../pics/usmap.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#mheader{
+	position: absolute;
+	top: 25px;
+	right: 45px;
+	z-index: 2;
+	.dimensions(auto, 35%);
+	background-color: @basegrey * 0.7;
+}
+
+#richland{
+	position: absolute;
+	top:12%;
+	left: 18%;
+	z-index: 2;
+	.dimensions(auto, 200px);
+	background-color:@baseblue * 0.3;
+
+}
+
+#alamos{
+	position: absolute;
+	top:46%;
+	left: 34.5%;
+	z-index: 2;
+	.dimensions(auto, 200px);
+	background-color:@baseblue * 0.3;
+
+}
+
+#oakridge{
+	position: absolute;
+	top:43%;
+	left: 53%;
+	z-index: 2;
+	.dimensions(auto, 200px);
+	background-color:@baseblue * 0.3;
+}
+
+#minfo1{
+	position: absolute;
+	top: 70%;
+	left: 45px;
+	z-index: 2;
+	.dimensions(auto, 35%);
+	background-color: @basegrey * 0.7;
 }
