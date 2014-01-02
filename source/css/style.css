@@ -39,6 +39,13 @@ h4 {
   font-style: italic;
   text-align: center;
 }
+.quotesmall {
+  color: white;
+  font-family: Georgia;
+  font-size: 1.65em;
+  font-style: italic;
+  text-align: center;
+}
 #wrp {
   height: auto;
   width: 100%;
@@ -377,10 +384,130 @@ header {
 }
 #minfo1 {
   position: absolute;
-  top: 70%;
+  top: 800px;
   left: 45px;
   z-index: 2;
   height: auto;
   width: 35%;
   background-color: #7a807f;
+}
+#sec4 {
+  position: absolute;
+  z-index: 1;
+  height: 1300px;
+  width: 100%;
+  float: left;
+  margin-top: calc(3550px);
+  background-color: black;
+  padding-right: 18px;
+  margin-left: -10px;
+}
+#trinityPres {
+  height: 700px;
+  width: 100%;
+  background-color: black;
+}
+#trinityHeader {
+  margin-top: 500px;
+}
+#skybg {
+  height: 1000px;
+  width: 100%;
+  float: left;
+  background-color: #b0ccea;
+  padding-right: 18px;
+  margin-left: -10px;
+}
+#dawnbg {
+  height: 400px;
+  width: 100%;
+  float: left;
+  background-color: #b0ccea;
+  background-image: -webkit-linear-gradient(top, #b0ccea, #fe5b35);
+  background-image: -moz-linear-gradient(top, #b0ccea, #fe5b35);
+  background-image: -o-linear-gradient(top, #b0ccea, #fe5b35);
+  background-image: -ms-linear-gradient(top, #b0ccea, #fe5b35);
+  background-image: linear-gradient(top, #b0ccea, #fe5b35);
+  padding-right: 18px;
+  margin-left: -10px;
+}
+#theader {
+  position: absolute;
+  top: 1200px;
+  left: 45px;
+  z-index: 2;
+  height: auto;
+  width: 25%;
+  background-color: #7b8fa4;
+}
+#tower {
+  position: absolute;
+  left: 650px;
+  z-index: 2;
+  height: 1400px;
+  width: 1000px;
+  background-image: url('../pics/tower.png');
+  background-size: cover;
+}
+#bomb {
+  position: absolute;
+  left: 983px;
+  top: 1255px;
+  z-index: 3;
+  height: 250px;
+  width: 175px;
+  background-image: url('../pics/gadget.png');
+  background-size: cover;
+}
+#clock {
+  position: absolute;
+  top: 2365px;
+  left: 150px;
+  z-index: 2;
+  height: 250px;
+  width: 300px;
+  background-image: url('../pics/clock.png');
+  background-size: cover;
+}
+#mountainbg {
+  position: absolute;
+  top: 2365px;
+  left: -60px;
+  z-index: 1;
+  height: 200px;
+  width: 100%;
+  float: left;
+  background-image: url('../pics/bg.png');
+  background-size: cover;
+  padding-right: 18px;
+  margin-left: -10px;
+}
+#groundbg {
+  position: absolute;
+  top: 2550px;
+  z-index: 1;
+  height: 100px;
+  width: 100%;
+  float: left;
+  background-color: #a97c50;
+  padding-right: 18px;
+  margin-left: -10px;
+}
+#trinityInfo1 {
+  position: absolute;
+  top: 1500px;
+  left: 45px;
+  z-index: 2;
+  height: auto;
+  width: 25%;
+  background-color: #7b8fa4;
+}
+#trinityInfo2 {
+  position: absolute;
+  top: 1715px;
+  left: 45px;
+  z-index: 2;
+  height: auto;
+  width: 25%;
+  background-color: #7b8fa4;
 }

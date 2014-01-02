@@ -19,6 +19,12 @@
 @basegrey:#afb7b5;
 
 
+@sec1height: 1750px;
+@sec2height: 550px;
+@sec3height: 1250px;
+@sec4height: 1300px;
+
+
 // ----------
 // Mixins
 // ----------
@@ -134,6 +140,13 @@ h4{
 	text-align: center;
 }
 
+.quotesmall{
+	color:@fontcolor;
+	font-family: @headerfont;
+	font-size: @h1size *0.3;	
+	font-style: italic;	
+	text-align: center;	
+}
 
 #wrp{
 	height: auto;
@@ -244,7 +257,7 @@ header{
 #sec1{
 	position: absolute;
 	z-index: 1;
-	.dimensions(1750px, 100%);	
+	.dimensions(@sec1height, 100%);	
 	float: left;
 	background-image: url("../pics/chalkboard.jpg");	
 	background-size: cover;
@@ -364,10 +377,10 @@ header{
 #sec2{
 	position: absolute;
 	z-index: 1;
-	.dimensions(550px, 100%);	
+	.dimensions(@sec2height, 100%);	
 	float: left;
 	background-color:@baseblue * 0.3;
-	margin-top: 1750px;
+	margin-top: @sec1height;
 	.marginFixSection();
 	}
 
@@ -394,9 +407,9 @@ header{
 #sec3{
 	position: absolute;
 	z-index: 1;
-	.dimensions(1250px, 100%);	
+	.dimensions(@sec3height, 100%);	
 	float: left;
-	margin-top: calc(1750px + 550px);
+	margin-top: calc(@sec1height + @sec2height);
 	background-color: @basegrey;
 	.marginFixSection();
 
@@ -456,9 +469,120 @@ header{
 
 #minfo1{
 	position: absolute;
-	top: 70%;
+	top: 800px;
 	left: 45px;
 	z-index: 2;
 	.dimensions(auto, 35%);
 	background-color: @basegrey * 0.7;
+}
+
+#sec4{
+	position: absolute;
+	z-index: 1;
+	.dimensions(@sec4height, 100%);	
+	float: left;
+	margin-top: calc(@sec1height + @sec2height + @sec3height);
+	background-color:@basecolor;
+	.marginFixSection();
+}
+
+
+#trinityPres{
+	.dimensions(700px, 100%);	
+	background-color:@basecolor;
+}
+
+#trinityHeader{
+margin-top: 500px;
+}
+
+#skybg{
+	.dimensions(1000px, 100%);	
+	float: left;
+	background-color: #b0ccea;
+	.marginFixSection();
+}
+
+#dawnbg{
+	.dimensions(400px, 100%);	
+	float: left;
+	.gradient (@origin: top, @start: #b0ccea, @stop: #FE5B35);
+	.marginFixSection();
+}
+
+#theader{
+	position: absolute;
+	top: 1200px;
+	left: 45px;
+	z-index: 2;
+	.dimensions(auto, 25%);
+	background-color: #b0ccea * 0.7;
+}
+
+#tower{
+	position: absolute;	
+	left: 650px;
+	z-index: 2;
+	.dimensions(1400px, 1000px);	
+	background-image: url('../pics/tower.png');
+	background-size: cover;
+}
+
+#bomb{
+	position: absolute;	
+	left: 983px;
+	top: 1255px;
+	z-index: 3;
+	.dimensions(250px, 175px);	
+	background-image: url('../pics/gadget.png');
+	background-size: cover;
+}
+
+#clock{
+	position: absolute;	
+	top: 2365px;
+	left: 150px;
+	z-index: 2;
+	.dimensions(250px, 300px);	
+	background-image: url('../pics/clock.png');
+	background-size: cover;	
+}
+
+#mountainbg{
+	position: absolute;	
+	top: 2365px;
+	left: -60px;
+	z-index: 1;
+	.dimensions(200px, 100%);	
+	float: left;
+	background-image: url('../pics/bg.png');
+	background-size: cover;
+	.marginFixSection();
+}
+#groundbg{
+	position: absolute;	
+	top: 2550px;
+	z-index: 1;
+	.dimensions(100px, 100%);	
+	float: left;
+	background-color: #A97C50;
+	.marginFixSection();
+}
+
+#trinityInfo1{
+	position: absolute;
+	top: 1500px;
+	left: 45px;
+	z-index: 2;
+	.dimensions(auto, 25%);
+	background-color: #b0ccea * 0.7;
+}
+
+#trinityInfo2{
+	position: absolute;
+	top: 1715px;
+	left: 45px;
+	z-index: 2;
+	.dimensions(auto, 25%);
+	background-color: #b0ccea * 0.7;
 }
