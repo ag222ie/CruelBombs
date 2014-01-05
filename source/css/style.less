@@ -22,7 +22,8 @@
 @sec1height: 1750px;
 @sec2height: 550px;
 @sec3height: 1250px;
-@sec4height: 1300px;
+@sec4height: 3650px;
+@sec5height: 1450px;
 
 
 // ----------
@@ -54,6 +55,30 @@
 	background-clip:         padding-box;
 }
 
+.border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+	-webkit-border-top-right-radius:    @topright;
+	-webkit-border-bottom-right-radius: @bottomright;
+	-webkit-border-bottom-left-radius:  @bottomleft;
+	-webkit-border-top-left-radius:     @topleft;
+
+	-moz-border-radius-topright:        @topright;
+	-moz-border-radius-bottomright:     @bottomright;
+	-moz-border-radius-bottomleft:      @bottomleft;
+	-moz-border-radius-topleft:         @topleft;
+
+	border-top-right-radius:            @topright;
+	border-bottom-right-radius:         @bottomright;
+	border-bottom-left-radius:          @bottomleft;
+	border-top-left-radius:             @topleft;
+
+	-moz-background-clip:    padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip:         padding-box; 
+}
+
+
+
+
 .marginFix(){
 	margin-top: -10px;
  	margin-left: -7px;
@@ -69,8 +94,8 @@
 	padding-left: 25px;
 }
 
-.border(@width, @color){
-	border: solid @width @color;
+.border(@bordertype, @width, @color){
+	border: @bordertype @width @color;
 }
 
 .dimensions(@height, @width){
@@ -212,6 +237,8 @@ header{
 	width: 250px;
 	height: auto;
 	background-color: @baseblue;
+	.border(dashed, 5px, white);
+
 }
 
 .boxFooter{
@@ -267,7 +294,7 @@ header{
 	img{				
 		position: absolute;
 		.dimensions(300px, auto);
-		.border(10px, #fff);	
+		.border(solid, 10px, #fff);	
 		top: 25px;
 		right: 45px;
 		.rotate(-7deg);
@@ -304,7 +331,7 @@ header{
 	margin-left: 50%;
 	background-color: #496b69 * 1.2;
 	.border-radius(50%);
-	.border(15px, #496b69);
+	.border(solid, 15px, #496b69);
 }
 
 #u235{
@@ -314,7 +341,7 @@ header{
 	background-color: #49596b * 1.2;
 	margin-top: 90px;
 	.border-radius(50%);	
-	.border(15px, #49596b);
+	.border(solid, 15px, #49596b);
 }
 
 #u236{
@@ -324,18 +351,17 @@ header{
 	background-color: #8560a8 * 1.2;
 	margin-top: 90px;
 	.border-radius(50%);	
-	.border(15px, #8560a8);
+	.border(solid, 15px, #8560a8);
 }
 
 #fission1{
 	position: absolute;
 	.dimensions(100px, 100px);
 	margin-left: 40%;	
-		margin-top: 750px;
-
+	margin-top: 750px;
 	background-color: #004a80 * 1.2;
 	.border-radius(50%);	
-	.border(15px, #004a80);
+	.border(solid, 15px, #004a80);
 }
 
 #fission2{
@@ -345,7 +371,7 @@ header{
 	margin-top: 750px;
 	background-color: #004a80 * 1.2;
 	.border-radius(50%);	
-	.border(15px, #004a80);
+	.border(solid, 15px, #004a80);
 }
 
 #nfissionheader{
@@ -356,7 +382,7 @@ header{
 
 #chalkText3{	
 	position: absolute;
-		margin-left: 7%;
+	margin-left: 7%;
 	.dimensions(auto, 25%);		
 }
 
@@ -416,6 +442,7 @@ header{
 	.bread{
 		font-family: @sansserif;
 		font-size: @h1size * 0.17;
+		display: none;
 
 	}
 }
@@ -444,8 +471,18 @@ header{
 	left: 18%;
 	z-index: 2;
 	.dimensions(auto, 200px);
-	background-color:@baseblue * 0.3;
+	background-color:@baseblue * 1.5;
 
+	.bread{
+		.gradient(bottom, @baseblue * 2.2, @baseblue * 1.5);
+		margin: -10px 0 -10px 0;
+		padding:  10px 0 10px 0;
+		.textPadding();
+	}
+
+	&:hover .bread{
+		display: block;
+	}
 }
 
 #alamos{
@@ -454,8 +491,18 @@ header{
 	left: 34.5%;
 	z-index: 2;
 	.dimensions(auto, 200px);
-	background-color:@baseblue * 0.3;
+	background-color:@baseblue * 1.5;
+	
+	.bread{
+		.gradient(bottom, @baseblue * 2.2, @baseblue * 1.5);
+		margin: -10px 0 -10px 0;
+		padding:  10px 0 10px 0;
+		.textPadding();
+	}
 
+	&:hover .bread{
+		display: block;
+	}
 }
 
 #oakridge{
@@ -464,7 +511,18 @@ header{
 	left: 53%;
 	z-index: 2;
 	.dimensions(auto, 200px);
-	background-color:@baseblue * 0.3;
+	background-color:@baseblue * 1.5;
+	
+	.bread{
+		.gradient(bottom, @baseblue * 2.2, @baseblue * 1.5);
+		margin: -10px 0 -10px 0;
+		padding:  10px 0 10px 0;
+		.textPadding();
+	}
+
+	&:hover .bread{
+		display: block;
+	}
 }
 
 #minfo1{
@@ -493,7 +551,7 @@ header{
 }
 
 #trinityHeader{
-margin-top: 500px;
+	margin-top: 500px;
 }
 
 #skybg{
@@ -585,4 +643,81 @@ margin-top: 500px;
 	z-index: 2;
 	.dimensions(auto, 25%);
 	background-color: #b0ccea * 0.7;
+}
+
+#whitebg{
+	position: absolute;
+	top: 2200px;	
+	z-index: 4;
+	.dimensions(1450px, 100%);
+	background-image: url('../pics/trinity.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#oppenheimerWpr{
+	margin-top: 500px;
+	.dimensions(auto, 30%);
+
+	.quote{
+		text-align: left;
+		margin-left: 7%;
+	}
+
+	.quotesmall{
+		text-align: left;
+		margin-left: 7%;
+	}
+}
+
+#trinityInfo3{
+	position: absolute;
+	top:900px;
+	left:2%;
+	.dimensions(auto, 25%);
+	background-color: @baseblue *0.3;
+	.border(dashed, 5px, white);
+}
+
+#trinityInfo4{
+	position: absolute;
+	top:1050px;
+	left:2%;
+	.dimensions(auto, 25%);
+	background-color: @baseblue *0.3;
+	.border(solid, 5px, white);
+}
+
+#sec5{
+	position: absolute;
+	z-index: 1;
+	.dimensions(@sec5height, 100%);	
+	float: left;
+	margin-top: calc(@sec1height + @sec2height + @sec3height + @sec4height);
+	.marginFixSection();
+}
+
+#hiroheaderwpr{
+	position: absolute;
+	top: 0px;	
+	z-index: 2;
+	.dimensions(1450px, 100%);
+}
+
+#hirohleft{
+	position: absolute;
+	top: 0px;	
+	z-index: 3;
+	.dimensions(1450px, 30%);
+	background-color: @basecolor;
+}
+
+#hirohright{
+	position: absolute;
+	right: 0px;	
+	z-index: 2;
+	.dimensions(1450px, 80%);
+	background-image: url('../pics/japanmap.png');
+	background-size: cover;
+	background-color: @basegrey;
 }

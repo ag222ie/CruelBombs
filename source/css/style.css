@@ -107,6 +107,7 @@ header {
   width: 250px;
   height: auto;
   background-color: #262d35;
+  border: dashed 5px white;
 }
 .boxFooter {
   width: 100%;
@@ -336,6 +337,7 @@ header {
 #sec3 .bread {
   font-family: Arial;
   font-size: 0.935em;
+  display: none;
 }
 #map {
   position: absolute;
@@ -362,7 +364,22 @@ header {
   z-index: 2;
   height: auto;
   width: 200px;
-  background-color: #0b0e10;
+  background-color: #394450;
+}
+#richland .bread {
+  background-color: #546375;
+  background-image: -webkit-linear-gradient(bottom, #546375, #394450);
+  background-image: -moz-linear-gradient(bottom, #546375, #394450);
+  background-image: -o-linear-gradient(bottom, #546375, #394450);
+  background-image: -ms-linear-gradient(bottom, #546375, #394450);
+  background-image: linear-gradient(bottom, #546375, #394450);
+  margin: -10px 0 -10px 0;
+  padding: 10px 0 10px 0;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+#richland:hover .bread {
+  display: block;
 }
 #alamos {
   position: absolute;
@@ -371,7 +388,22 @@ header {
   z-index: 2;
   height: auto;
   width: 200px;
-  background-color: #0b0e10;
+  background-color: #394450;
+}
+#alamos .bread {
+  background-color: #546375;
+  background-image: -webkit-linear-gradient(bottom, #546375, #394450);
+  background-image: -moz-linear-gradient(bottom, #546375, #394450);
+  background-image: -o-linear-gradient(bottom, #546375, #394450);
+  background-image: -ms-linear-gradient(bottom, #546375, #394450);
+  background-image: linear-gradient(bottom, #546375, #394450);
+  margin: -10px 0 -10px 0;
+  padding: 10px 0 10px 0;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+#alamos:hover .bread {
+  display: block;
 }
 #oakridge {
   position: absolute;
@@ -380,7 +412,22 @@ header {
   z-index: 2;
   height: auto;
   width: 200px;
-  background-color: #0b0e10;
+  background-color: #394450;
+}
+#oakridge .bread {
+  background-color: #546375;
+  background-image: -webkit-linear-gradient(bottom, #546375, #394450);
+  background-image: -moz-linear-gradient(bottom, #546375, #394450);
+  background-image: -o-linear-gradient(bottom, #546375, #394450);
+  background-image: -ms-linear-gradient(bottom, #546375, #394450);
+  background-image: linear-gradient(bottom, #546375, #394450);
+  margin: -10px 0 -10px 0;
+  padding: 10px 0 10px 0;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+#oakridge:hover .bread {
+  display: block;
 }
 #minfo1 {
   position: absolute;
@@ -394,7 +441,7 @@ header {
 #sec4 {
   position: absolute;
   z-index: 1;
-  height: 1300px;
+  height: 3650px;
   width: 100%;
   float: left;
   margin-top: calc(3550px);
@@ -510,4 +557,80 @@ header {
   height: auto;
   width: 25%;
   background-color: #7b8fa4;
+}
+#whitebg {
+  position: absolute;
+  top: 2200px;
+  z-index: 4;
+  height: 1450px;
+  width: 100%;
+  background-image: url('../pics/trinity.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#oppenheimerWpr {
+  margin-top: 500px;
+  height: auto;
+  width: 30%;
+}
+#oppenheimerWpr .quote {
+  text-align: left;
+  margin-left: 7%;
+}
+#oppenheimerWpr .quotesmall {
+  text-align: left;
+  margin-left: 7%;
+}
+#trinityInfo3 {
+  position: absolute;
+  top: 900px;
+  left: 2%;
+  height: auto;
+  width: 25%;
+  background-color: #0b0e10;
+  border: dashed 5px white;
+}
+#trinityInfo4 {
+  position: absolute;
+  top: 1050px;
+  left: 2%;
+  height: auto;
+  width: 25%;
+  background-color: #0b0e10;
+  border: solid 5px white;
+}
+#sec5 {
+  position: absolute;
+  z-index: 1;
+  height: 1450px;
+  width: 100%;
+  float: left;
+  margin-top: calc(7200px);
+  padding-right: 18px;
+  margin-left: -10px;
+}
+#hiroheaderwpr {
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+  height: 1450px;
+  width: 100%;
+}
+#hirohleft {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  height: 1450px;
+  width: 30%;
+  background-color: black;
+}
+#hirohright {
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+  height: 1450px;
+  width: 80%;
+  background-image: url('../pics/japanmap.png');
+  background-size: cover;
+  background-color: #afb7b5;
 }
