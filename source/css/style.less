@@ -23,7 +23,7 @@
 @sec2height: 550px;
 @sec3height: 1250px;
 @sec4height: 3650px;
-@sec5height: 1450px;
+@sec5height: 1950px;
 
 
 // ----------
@@ -701,23 +701,164 @@ header{
 	position: absolute;
 	top: 0px;	
 	z-index: 2;
-	.dimensions(1450px, 100%);
+	.dimensions(1950px, 100%);
 }
 
-#hirohleft{
+#hirohbottom{
 	position: absolute;
 	top: 0px;	
 	z-index: 3;
-	.dimensions(1450px, 30%);
-	background-color: @basecolor;
+	.dimensions(1950px, 100%);
+	background-color: @baseblue;
 }
 
-#hirohright{
+#hiroheader{
 	position: absolute;
-	right: 0px;	
-	z-index: 2;
-	.dimensions(1450px, 80%);
-	background-image: url('../pics/japanmap.png');
+	top: 0px;	
+	left:2%;
+	z-index: 3;
+	.dimensions(auto, 25%);
+}
+
+#plane{
+	position: absolute;
+	top: 500px;	
+	left: 65%;
+	z-index: 5;
+	.dimensions(450px, 35%);
+	background-image: url('../pics/b29.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#plane2{
+	position: absolute;
+	top: 700px;	
+	left: 15%;
+	z-index: 3;
+	.dimensions(350px, 25%);
+	background-image: url('../pics/b29.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#plane3{
+	position: absolute;
+	top: 425px;	
+	left: 30%;
+	z-index: 6;
+	.dimensions(550px, 45%);
+	background-image: url('../pics/b29.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#cloud{
+	position: absolute;
+	top: 225px;	
+	left: 10%;
+	z-index: 7;
+	.dimensions(250px, 15%);
+	background-image: url('../pics/cloud1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+	.rotate(180deg);
+}
+
+#cloud2{
+	position: absolute;
+	top: 365px;	
+	left: 65%;
+	z-index: 5;
+	.dimensions(350px, 20%);	
+	background-image: url('../pics/cloud1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.3;
+}
+
+#cloud3{
+	position: absolute;
+	top:500px;	
+	left: 39%;
+	z-index: 7;
+	.dimensions(500px, 12%);
+	background-image: url('../pics/cloud3.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#cloud4{
+	position: absolute;
+	top:680px;	
+	left: 5%;
+	z-index: 7;
+	.dimensions(450px, 15%);
+	background-image: url('../pics/cloud2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.8;
+	.rotate(60deg);
+}
+
+#cloud5{
+	position: absolute;
+	top:850px;	
+	left: 67%;
+	z-index: 4;
+	.dimensions(425px, 18%);
+	background-image: url('../pics/cloud2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.3;
+	.rotate(0deg);
+}
+
+#cloud6{
+	position: absolute;
+	top:600px;	
+	left: 42%;
+	z-index: 5;
+	.dimensions(350px, 15%);
+	background-image: url('../pics/cloud1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.3;
+	.rotate(180deg);
+}
+
+#cloud7{
+	position: absolute;
+	top:800px;	
+	left: 11%;
+	z-index: 7;
+	.dimensions(350px, 15%);
+	background-image: url('../pics/cloud1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.3;
+	.rotate(190deg);
+}
+
+#cloud8{
+	position: absolute;
+	top: 315px;	
+	left: 67%;
+	z-index: 5;
+	.dimensions(350px, 20%);	
+	background-image: url('../pics/cloud2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.7;
+	.rotate(50deg);
+}
+
+#fatmantop{
+	position: absolute;
+	top:975px;	
+	left: 46%;
+	z-index: 6;
+	.dimensions(70px, 70px);
+	background-image: url('../pics/fatman.png');
 	background-size: cover;
-	background-color: @basegrey;
+	.rotate(45deg);
 }
