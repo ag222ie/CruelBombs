@@ -602,7 +602,7 @@ header {
 #sec5 {
   position: absolute;
   z-index: 1;
-  height: 1950px;
+  height: 2450px;
   width: 100%;
   float: left;
   margin-top: calc(7200px);
@@ -613,17 +613,29 @@ header {
   position: absolute;
   top: 0px;
   z-index: 2;
-  height: 1950px;
+  height: 1750px;
   width: 100%;
 }
-#hirohbottom {
+#hirobottom {
   position: absolute;
   top: 0px;
   z-index: 3;
-  height: 1950px;
+  height: 1750px;
   width: 100%;
-  background-color: #262d35;
+  background-image: url("../pics/ground.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
 }
+/*#hirobottom2{
+	position: absolute;
+	top: 1050px;	
+	z-index: 3;
+	.dimensions(1050px, 100%);
+	background-image: url("../pics/ground.jpg");	
+	background-size: cover;
+	.mirror(-1);
+}*/
+
 #hiroheader {
   position: absolute;
   top: 0px;
@@ -631,6 +643,7 @@ header {
   z-index: 3;
   height: auto;
   width: 25%;
+  background-color: #2e2e2c;
 }
 #plane {
   position: absolute;
@@ -675,7 +688,7 @@ header {
   background-image: url('../pics/cloud1.png');
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.5;
+  opacity: 0.8;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -691,7 +704,7 @@ header {
   background-image: url('../pics/cloud1.png');
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.3;
+  opacity: 0.8;
 }
 #cloud3 {
   position: absolute;
@@ -714,7 +727,6 @@ header {
   background-image: url('../pics/cloud2.png');
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.8;
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
   -ms-transform: rotate(60deg);
@@ -722,15 +734,15 @@ header {
 }
 #cloud5 {
   position: absolute;
-  top: 850px;
-  left: 67%;
+  top: 975px;
+  left: 60%;
   z-index: 4;
   height: 425px;
   width: 18%;
   background-image: url('../pics/cloud2.png');
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.3;
+  opacity: 0.8;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -746,7 +758,7 @@ header {
   background-image: url('../pics/cloud1.png');
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.3;
+  opacity: 0.8;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -762,7 +774,7 @@ header {
   background-image: url('../pics/cloud1.png');
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.3;
+  opacity: 0.8;
   -webkit-transform: rotate(190deg);
   -moz-transform: rotate(190deg);
   -ms-transform: rotate(190deg);
@@ -778,11 +790,68 @@ header {
   background-image: url('../pics/cloud2.png');
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.7;
   -webkit-transform: rotate(50deg);
   -moz-transform: rotate(50deg);
   -ms-transform: rotate(50deg);
   -o-transform: rotate(50deg);
+}
+#cloud9 {
+  position: absolute;
+  top: 1305px;
+  left: 61%;
+  z-index: 7;
+  height: 450px;
+  width: 15%;
+  background-image: url('../pics/cloud2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+}
+#cloud10 {
+  position: absolute;
+  top: 1325px;
+  left: 66%;
+  z-index: 7;
+  height: 350px;
+  width: 15%;
+  background-image: url('../pics/cloud1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  -webkit-transform: rotate(190deg);
+  -moz-transform: rotate(190deg);
+  -ms-transform: rotate(190deg);
+  -o-transform: rotate(190deg);
+}
+#cloud11 {
+  position: absolute;
+  top: 1100px;
+  left: 29%;
+  z-index: 7;
+  height: 500px;
+  width: 12%;
+  background-image: url('../pics/cloud3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+#cloud12 {
+  position: absolute;
+  top: 1365px;
+  left: 11%;
+  z-index: 5;
+  height: 350px;
+  width: 20%;
+  background-image: url('../pics/cloud1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
 }
 #fatmantop {
   position: absolute;
@@ -797,4 +866,61 @@ header {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+}
+#hiroinfo1 {
+  position: absolute;
+  top: 350px;
+  left: 2%;
+  z-index: 8;
+  height: auto;
+  width: 25%;
+  background-color: #2e2e2c;
+  border: solid 5px white;
+}
+#hiroinfo2 {
+  position: absolute;
+  top: 825px;
+  left: 2%;
+  z-index: 8;
+  height: auto;
+  width: 25%;
+  background-color: #2e2e2c;
+  border: solid 5px white;
+}
+#hiroinfo3 {
+  position: absolute;
+  top: 1125px;
+  left: 2%;
+  z-index: 8;
+  height: auto;
+  width: 25%;
+  background-color: #2e2e2c;
+  border: solid 5px white;
+}
+#hiroaftermath {
+  position: absolute;
+  top: 1750px;
+  height: 1000px;
+  width: 100%;
+  background-image: url("../pics/hiroafter.jpg");
+  background-size: cover;
+}
+#hiroinfo4 {
+  position: absolute;
+  top: 125px;
+  left: 2%;
+  z-index: 8;
+  height: auto;
+  width: 25%;
+  border: dashed 5px white;
+}
+#hiroinfo5 {
+  position: absolute;
+  top: 625px;
+  left: 2%;
+  z-index: 8;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+  background-color: #0b0e10;
 }
