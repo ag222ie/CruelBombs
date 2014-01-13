@@ -34,3 +34,9 @@ Låta bomben rotera.
 
 
 Kapitel med ankarlänkar (meny?).
+
+
+Textboxar "rör" på sig när man scrollar.
+
+
+"Scroll down"

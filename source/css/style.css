@@ -602,7 +602,7 @@ header {
 #sec5 {
   position: absolute;
   z-index: 1;
-  height: 2450px;
+  height: 4700px;
   width: 100%;
   float: left;
   margin-top: calc(7200px);
@@ -916,11 +916,307 @@ header {
 }
 #hiroinfo5 {
   position: absolute;
-  top: 625px;
+  top: 575px;
   left: 2%;
   z-index: 8;
   height: auto;
   width: 25%;
   border: solid 5px white;
   background-color: #0b0e10;
+}
+#nagasaki {
+  position: absolute;
+  top: calc(2750px);
+  height: 750px;
+  width: 100%;
+  background-image: url("../pics/clouds.jpg");
+  background-size: cover;
+}
+#nagainfo1 {
+  position: absolute;
+  top: 125px;
+  left: 2%;
+  z-index: 8;
+  background-color: #3e3e40;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+}
+#nagainfo2 {
+  position: absolute;
+  top: 400px;
+  left: 2%;
+  z-index: 8;
+  background-color: #3e3e40;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+}
+#nagaaftermath {
+  position: absolute;
+  top: 3500px;
+  height: 1200px;
+  width: 100%;
+  background-image: url("../pics/nagaafter.jpeg");
+  background-size: cover;
+}
+#nagainfo3 {
+  position: absolute;
+  top: 100px;
+  left: 70%;
+  z-index: 8;
+  height: auto;
+  width: 25%;
+  border: dashed 5px white;
+  background-color: #1a1612;
+}
+#nagainfo4 {
+  position: absolute;
+  top: 750px;
+  left: 2%;
+  z-index: 8;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+  background-color: #1a1612;
+}
+#sec6 {
+  position: absolute;
+  z-index: 1;
+  height: 1585px;
+  width: 100%;
+  float: left;
+  margin-top: calc(11900px);
+  padding-right: 18px;
+  margin-left: -10px;
+}
+#risingheader {
+  position: absolute;
+  top: 0px;
+  left: 2%;
+  z-index: 1;
+  height: auto;
+  width: 25%;
+  background-color: #2e2e2c;
+}
+#crossroads {
+  position: absolute;
+  top: 0px;
+  height: 1000px;
+  width: 100%;
+  background-image: url("../pics/crossroads.jpg");
+  background-size: cover;
+}
+#crossroadsinfo {
+  position: absolute;
+  top: 700px;
+  left: 7%;
+  z-index: 1;
+  height: auto;
+  width: 25%;
+  border: dashed 5px white;
+  background-color: #3e3e3e;
+}
+#rising {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  height: auto;
+  width: 25%;
+}
+#risinginfo1 {
+  position: absolute;
+  top: 100px;
+  right: 7%;
+  z-index: 1;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+  background-color: #3e3e3e;
+}
+#risinginfo2 {
+  position: absolute;
+  top: 350px;
+  right: 7%;
+  z-index: 1;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+  background-color: #3e3e3e;
+}
+#risinginfo3 {
+  position: absolute;
+  top: 650px;
+  right: 7%;
+  z-index: 1;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+  background-color: #3e3e3e;
+}
+#einsteinquote {
+  position: absolute;
+  top: 1000px;
+  height: 285px;
+  width: 100%;
+  background-color: white;
+}
+#einsteinquote .quote {
+  height: auto;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  color: black;
+}
+#einsteinquote .quotesmall {
+  color: black;
+}
+#commie {
+  position: absolute;
+  top: 1285px;
+  height: 300px;
+  width: 100%;
+  z-index: 0;
+  background-color: #cc0001;
+}
+#commie img {
+  position: absolute;
+  top: 20px;
+  left: 3%;
+  opacity: 0.5;
+}
+#risinginfo4 {
+  position: absolute;
+  right: 40%;
+  z-index: 2;
+  height: auto;
+  width: 25%;
+  background-color: #8f0001;
+}
+#risinginfo5 {
+  position: absolute;
+  right: 7%;
+  z-index: 2;
+  height: auto;
+  width: 25%;
+  background-color: #8f0001;
+}
+#sec7 {
+  position: absolute;
+  z-index: 1;
+  height: 2200px;
+  width: 100%;
+  float: left;
+  margin-top: calc(13485px);
+  padding-right: 18px;
+  margin-left: -10px;
+}
+#armsheader {
+  position: absolute;
+  top: 0px;
+  left: 2%;
+  z-index: 1;
+  height: auto;
+  width: 25%;
+  background-color: #011b32;
+}
+#arms {
+  position: absolute;
+  height: 1100px;
+  width: 100%;
+  background-image: url("../pics/ivy.jpg");
+  background-size: cover;
+}
+#ivyinfo1 {
+  position: absolute;
+  top: 175px;
+  right: 5%;
+  z-index: 1;
+  height: auto;
+  width: 25%;
+  border: dashed 5px white;
+}
+#ivyinfo2 {
+  position: absolute;
+  top: 250px;
+  left: 2%;
+  z-index: 1;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+}
+#ivyinfo3 {
+  position: absolute;
+  top: 475px;
+  left: 2%;
+  z-index: 1;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+}
+#ivyinfo4 {
+  position: absolute;
+  top: 725px;
+  right: 2%;
+  z-index: 1;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+}
+#cbravo {
+  position: absolute;
+  top: 1100px;
+  height: 1100px;
+  width: 50%;
+  background-image: url("../pics/cbravo.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+#cbravoinfo1 {
+  position: absolute;
+  top: 1975px;
+  left: 2%;
+  z-index: 1;
+  height: auto;
+  width: 25%;
+  border: dashed 5px white;
+}
+#cbravo1 {
+  position: absolute;
+  top: 1100px;
+  right: 0;
+  height: 550px;
+  width: 50%;
+  background-image: url("../pics/romeo.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+#cbravoinfo2 {
+  position: absolute;
+  top: 1525px;
+  right: 23%;
+  z-index: 1;
+  height: auto;
+  width: 25%;
+  border: dashed 5px white;
+}
+#cbravoinfo3 {
+  position: absolute;
+  top: 1725px;
+  right: 13%;
+  z-index: 1;
+  height: auto;
+  width: 35%;
+  border: solid 5px white;
+}
+#cbravoinfo4 {
+  position: absolute;
+  top: 1875px;
+  right: 13%;
+  z-index: 1;
+  height: auto;
+  width: 35%;
+  border: solid 5px white;
 }

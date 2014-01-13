@@ -23,8 +23,9 @@
 @sec2height: 550px;
 @sec3height: 1250px;
 @sec4height: 3650px;
-@sec5height: 2450px;
-
+@sec5height: 4700px;
+@sec6height: 1585px;
+@sec7height: 2200px;
 
 // ----------
 // Mixins
@@ -980,10 +981,314 @@ header{
 
 #hiroinfo5{
 	position: absolute;
-	top:625px;
+	top:575px;
 	left:2%;
 	z-index: 8;
 	.dimensions(auto, 25%);
 	.border(solid, 5px, white);
 	background-color: @baseblue *0.3;
 }
+#nagasaki{
+	position: absolute;
+	top:calc(1750px + 1000px);
+	.dimensions(750px, 100%);
+	background-image: url("../pics/clouds.jpg");	
+	background-size: cover;
+}
+
+#nagainfo1{
+	position: absolute;
+	top:125px;
+	left:2%;
+	z-index: 8;
+	background-color: #59595B * 0.7;
+	.dimensions(auto, 25%);
+	.border(solid, 5px, white);
+}
+
+#nagainfo2{
+	position: absolute;
+	top:400px;
+	left:2%;
+	z-index: 8;
+	background-color: #59595B * 0.7;
+	.dimensions(auto, 25%);
+	.border(solid, 5px, white);
+}
+
+#nagaaftermath{
+	position: absolute;
+	top:3500px;
+	.dimensions(1200px, 100%);
+	background-image: url("../pics/nagaafter.jpeg");	
+	background-size: cover;
+}
+
+#nagainfo3{
+	position: absolute;
+	top:100px;
+	left:70%;
+	z-index: 8;
+	.dimensions(auto, 25%);
+	.border(dashed, 5px, white);
+	background-color: #25201A * 0.7;
+}
+
+#nagainfo4{
+	position: absolute;
+	top:750px;
+	left:2%;
+	z-index: 8;
+	.dimensions(auto, 25%);
+	.border(solid, 5px, white);
+	background-color: #25201A * 0.7;
+}
+
+#sec6{
+	position: absolute;
+	z-index: 1;
+	.dimensions(@sec6height, 100%);	
+	float: left;
+	margin-top: calc(@sec1height + @sec2height + @sec3height + @sec4height +  @sec5height);
+	.marginFixSection();
+
+
+
+}
+
+#risingheader{
+	position: absolute;
+	top: 0px;	
+	left:2%;
+	z-index: 1;
+	.dimensions(auto, 25%);
+	background-color: #42413F * 0.7;
+}
+
+#crossroads{
+	position: absolute;
+	top:0px;
+	.dimensions(1000px,100%);
+	background-image: url("../pics/crossroads.jpg");	
+	background-size: cover;
+}
+
+#crossroadsinfo{
+	position: absolute;
+	top:700px;
+	left:7%;
+	z-index: 1;
+	.dimensions(auto, 25%);
+	.border(dashed, 5px, white);
+	background-color: #595959 * 0.7;
+
+}
+
+#rising{
+	position: absolute;
+	top:0px;
+	right:0;
+	.dimensions(auto, 25%);
+}
+
+#risinginfo1{
+	position: absolute;
+	top:100px;
+	right:7%;
+	z-index: 1;
+	.dimensions(auto, 25%);
+	.border(solid, 5px, white);
+	background-color: #595959 * 0.7;
+}
+
+#risinginfo2{
+	position: absolute;
+	top:350px;
+	right:7%;
+	z-index: 1;
+	.dimensions(auto, 25%);
+	.border(solid, 5px, white);
+	background-color: #595959 * 0.7;
+}
+
+#risinginfo3{
+	position: absolute;
+	top:650px;
+	right:7%;
+	z-index: 1;
+	.dimensions(auto, 25%);
+	.border(solid, 5px, white);
+	background-color: #595959 * 0.7;
+}
+
+
+#einsteinquote{
+	position: absolute;
+	top:1000px;
+	.dimensions(285px,100%);
+	background-color: white;
+
+	.quote{
+		.dimensions(auto,75%);
+		.positionCenter();
+		color:black;
+	}
+
+	.quotesmall{
+		color:black;
+	}
+}
+
+#commie{
+	position: absolute;
+	top:1285px;
+	.dimensions(300px,100%);
+	z-index: 0;
+	background-color: #CC0001;
+
+	img{
+		position: absolute;
+		top:20px;
+		left:3%;
+		opacity: 0.5;
+	}
+}
+
+#risinginfo4{
+	position: absolute;
+	right:40%;
+	z-index: 2;
+	.dimensions(auto, 25%);
+	background-color: #CC0001 * 0.7;
+
+}
+
+#risinginfo5{
+	position: absolute;
+	right:7%;
+	z-index: 2;
+	.dimensions(auto, 25%);
+	background-color: #CC0001 * 0.7;
+
+}
+
+#sec7{
+	position: absolute;
+	z-index: 1;
+	.dimensions(@sec7height, 100%);	
+	float: left;
+	margin-top: calc(@sec1height + @sec2height + @sec3height + @sec4height +  @sec5height + @sec6height);
+	.marginFixSection();
+}
+
+#armsheader{
+	position: absolute;
+	top: 0px;	
+	left:2%;
+	z-index: 1;
+	.dimensions(auto, 25%);
+	background-color: #022648 * 0.7;
+}
+
+#arms{
+	position: absolute;
+	.dimensions(1100px, 100%);
+	background-image: url("../pics/ivy.jpg");	
+	background-size: cover;
+}
+
+#ivyinfo1{
+	position: absolute;
+	top:175px;
+	right:5%;
+	z-index: 1;
+	.dimensions(auto, 25%);
+	.border(dashed, 5px, white);
+}
+
+#ivyinfo2{
+	position: absolute;
+	top:250px;
+	left:2%;
+	z-index: 1;
+	.dimensions(auto, 25%);
+	.border(solid, 5px, white);
+}
+
+#ivyinfo3{
+	position: absolute;
+	top:475px;
+	left:2%;
+	z-index: 1;
+	.dimensions(auto, 25%);
+	.border(solid, 5px, white);
+}
+
+#ivyinfo4{
+	position: absolute;
+	top:725px;
+	right:2%;
+	z-index: 1;
+	.dimensions(auto, 25%);
+	.border(solid, 5px, white);
+}
+
+#cbravo{
+	position: absolute;
+	top:1100px;
+	.dimensions(1100px, 50%);
+	background-image: url("../pics/cbravo.jpg");	
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+#cbravoinfo1{
+	position: absolute;
+	top:1975px;
+	left:2%;
+	z-index: 1;
+	.dimensions(auto, 25%);
+	.border(dashed, 5px, white);
+}
+
+#cbravo1{
+	position: absolute;
+	top:1100px;
+	right:0;
+	.dimensions(550px, 50%);
+	background-image: url("../pics/romeo.jpg");	
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+#cbravoinfo2{
+	position: absolute;
+	top:1525px;
+	right:23%;
+	z-index: 1;
+	.dimensions(auto, 25%);
+	.border(dashed, 5px, white);
+}
+
+#cbravoinfo3{
+	position: absolute;
+	top:1725px;
+	right:13%;
+	z-index: 1;
+	.dimensions(auto, 35%);
+	.border(solid, 5px, white);
+
+}
+
+#cbravoinfo4{
+	position: absolute;
+	top:1875px;
+	right:13%;
+	z-index: 1;
+	.dimensions(auto, 35%);
+	.border(solid, 5px, white);
+}
+
+
