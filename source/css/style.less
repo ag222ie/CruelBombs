@@ -25,8 +25,10 @@
 @sec3height: 1250px;
 @sec4height: 3650px;
 @sec5height: 4700px;
-@sec6height: 1585px;
+@sec6height: 1485px;
 @sec7height: 2200px;
+@sec8height: 1000px;
+
 
 // ----------
 // Mixins
@@ -213,7 +215,7 @@ h4{
 
 #menu{
 	.dimensions(40px, 100%);		
-	background-color: @basecolor;
+	background-color: white;
 }
 
 nav{
@@ -1066,9 +1068,6 @@ header{
 	float: left;
 	margin-top: calc(@sec1height + @sec2height + @sec3height + @sec4height +  @sec5height);
 	.marginFixSection();
-
-
-
 }
 
 #risingheader{
@@ -1157,16 +1156,9 @@ header{
 #commie{
 	position: absolute;
 	top:1285px;
-	.dimensions(300px,100%);
+	.dimensions(200px,100%);
 	z-index: 0;
-	background-color: #CC0001;
-
-	img{
-		position: absolute;
-		top:20px;
-		left:3%;
-		opacity: 0.5;
-	}
+	background-color: @baseblue;
 }
 
 #risinginfo4{
@@ -1174,7 +1166,7 @@ header{
 	right:40%;
 	z-index: 2;
 	.dimensions(auto, 25%);
-	background-color: #CC0001 * 0.7;
+	background-color: @baseblue * 0.7;
 
 }
 
@@ -1183,7 +1175,7 @@ header{
 	right:7%;
 	z-index: 2;
 	.dimensions(auto, 25%);
-	background-color: #CC0001 * 0.7;
+	background-color: @baseblue * 0.7;
 
 }
 
@@ -1306,4 +1298,78 @@ header{
 	.border(solid, 5px, white);
 }
 
+#sec8{
+	position: absolute;
+	z-index: 1;
+	.dimensions(@sec8height, 100%);	
+	float: left;
+	margin-top: calc(@sec1height + @sec2height + @sec3height + @sec4height +  @sec5height + @sec6height + @sec7height);
+	.marginFixSection();
+	background-color: #CC0001;
 
+	img{
+		position: absolute;
+		left: 7%;
+		.dimensions(375px, 375px);
+	}
+}
+
+#sovietheader{
+	position: absolute;
+	top: 0px;	
+	right:5%;
+	z-index: 1;
+	.dimensions(auto, 35%);
+	background-color: #CC0001 * 0.7;	
+}
+
+#sovietinfo1{
+	position: absolute;
+	top:250px;
+	right:5%;
+	z-index: 1;
+	.dimensions(auto, 35%);
+	.border(solid, 5px, white);	
+	background-color: #CC0001 * 0.7;	
+}
+
+#sovietinfo2{
+	position: absolute;
+	top:400px;
+	right:5%;
+	z-index: 1;
+	.dimensions(auto, 35%);
+	.border(solid, 5px, white);	
+	background-color: #CC0001 * 0.7;	
+}
+
+#sovietinfo3{
+	position: absolute;
+	top:575px;
+	left:5%;
+	z-index: 1;
+	.dimensions(auto, 35%);
+	.border(solid, 5px, white);	
+	background-color: #CC0001 * 0.7;	
+}
+
+#soviettimeline{
+	position: absolute;
+	top:575px;
+	right:5%;
+	z-index: 1;
+	.dimensions(150px, 35%);
+	.border(solid, 5px, white);	
+	background-color: #CC0001 * 0.7;	
+
+}
+
+#sovietinfo4{
+	position: absolute;
+	top:750px;
+	left:5%;
+	z-index: 1;
+	.dimensions(auto, 35%);
+	.border(solid, 5px, white);	
+	background-color: #CC0001 * 0.7;	
+}

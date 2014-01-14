@@ -24,6 +24,7 @@ En klocka på byggnaden nere vid basen.
 
 Beskriv "critical mass."
 
+Beskriva "thermonuclear weapons."
 
 
 "Now I am become Death, the destroyer of worlds." - Glöm inte notering.
@@ -42,3 +43,5 @@ Textboxar "rör" på sig när man scrollar.
 "Scroll down"
 
 Ange "yield".
+
+
