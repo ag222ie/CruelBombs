@@ -7,6 +7,7 @@
 // Fonts
 @headerfont: Georgia;
 @sansserif: Arial;
+@imagebyline: Verdana;
 @paragraphfont: "Times New Roman";
 @fontlinks:Arial;
 @chalkboardfont:'Delius Unicase', cursive;
@@ -122,6 +123,20 @@
 	-o-transform: 		 rotate(@deg);
 }
 
+.info{
+	font-family: @sansserif;
+	font-size: @h1size * 0.19;
+	color:@fontcolor;
+	.textPadding();
+}	
+
+.imagebyline{
+	font-family: @imagebyline;
+	font-size: @h1size * 0.14;
+	color:@fontcolor;
+	.textPadding();
+}
+
 // ----------
 // CSS
 // ----------
@@ -186,12 +201,19 @@ h4{
 }
 
 #top{
-	position: absolute;
-	z-index: 1;
-	height: 45px;
-	width: 100%;
-	background-color: @baseblue * 0.5;
-	.marginFix;
+	position: fixed;
+	z-index: 10;
+	height: 40px;
+	width: 80%;
+	background-color: @baseblue;	
+	margin-left:-15px;
+	margin-top: -10px;
+	opacity:0.8;
+}
+
+#menu{
+	.dimensions(40px, 100%);		
+	background-color: @basecolor;
 }
 
 nav{
@@ -417,13 +439,6 @@ header{
 	.marginFixSection();
 	}
 
-
-.info{
-	font-family: @sansserif;
-	font-size: @h1size * 0.22;
-	color:@fontcolor;
-	.textPadding();
-}	
 
 #einsteinletterquotewrp{
 	.dimensions(auto, 75%);
@@ -1284,7 +1299,7 @@ header{
 
 #cbravoinfo4{
 	position: absolute;
-	top:1875px;
+	top:1925px;
 	right:13%;
 	z-index: 1;
 	.dimensions(auto, 35%);

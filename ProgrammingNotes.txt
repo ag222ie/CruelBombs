@@ -40,3 +40,5 @@ Textboxar "rör" på sig när man scrollar.
 
 
 "Scroll down"
+
+Ange "yield".
