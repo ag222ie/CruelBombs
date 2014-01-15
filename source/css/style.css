@@ -77,7 +77,7 @@ h4 {
 #menu {
   height: 40px;
   width: 100%;
-  background-color: white;
+  background-color: green;
 }
 nav {
   float: right;
@@ -1090,7 +1090,7 @@ header {
   height: 200px;
   width: 100%;
   z-index: 0;
-  background-color: #262d35;
+  background-color: #595959;
 }
 #risinginfo4 {
   position: absolute;
@@ -1098,7 +1098,7 @@ header {
   z-index: 2;
   height: auto;
   width: 25%;
-  background-color: #1b1f25;
+  background-color: #3e3e3e;
 }
 #risinginfo5 {
   position: absolute;
@@ -1106,7 +1106,7 @@ header {
   z-index: 2;
   height: auto;
   width: 25%;
-  background-color: #1b1f25;
+  background-color: #3e3e3e;
 }
 #sec7 {
   position: absolute;
@@ -1302,4 +1302,204 @@ header {
   width: 35%;
   border: solid 5px white;
   background-color: #8f0001;
+}
+#sec9 {
+  position: absolute;
+  z-index: 1;
+  height: 2000px;
+  width: 100%;
+  float: left;
+  margin-top: calc(16585px);
+  padding-right: 18px;
+  margin-left: -10px;
+  background-color: #607b8b;
+}
+#tsarheader {
+  position: absolute;
+  top: 0px;
+  left: 5%;
+  z-index: 1;
+  height: auto;
+  width: 25%;
+  background-color: #435661;
+}
+#tsarinfo1 {
+  position: absolute;
+  top: 200px;
+  left: 5%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+  background-color: #435661;
+}
+#tu95 {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 0;
+  height: 500px;
+  width: 41%;
+  background-image: url('../pics/tu95.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#tsarbomba {
+  position: absolute;
+  top: 200px;
+  left: 23%;
+  z-index: -1;
+  height: 175px;
+  width: 10%;
+  background-image: url('../pics/tsarbomba.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#cloudtsar1 {
+  position: absolute;
+  top: 175px;
+  left: 15%;
+  z-index: 3;
+  height: 500px;
+  width: 12%;
+  background-image: url('../pics/cloud3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+#cloudtsar2 {
+  position: absolute;
+  top: 275px;
+  right: 20%;
+  z-index: 3;
+  height: 500px;
+  width: 12%;
+  background-image: url('../pics/cloud1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+#cloudtsar3 {
+  position: absolute;
+  top: 675px;
+  left: 40%;
+  z-index: 3;
+  height: 500px;
+  width: 12%;
+  background-image: url('../pics/cloud1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#cloudtsar4 {
+  position: absolute;
+  top: -75px;
+  right: 20%;
+  z-index: 3;
+  height: 500px;
+  width: 12%;
+  background-image: url('../pics/cloud3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+#cloudtsar5 {
+  position: absolute;
+  top: 675px;
+  right: 20%;
+  z-index: 3;
+  height: 500px;
+  width: 12%;
+  background-image: url('../pics/cloud3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+#fireball {
+  position: absolute;
+  top: 750px;
+  left: 15%;
+  z-index: 1;
+  height: 300px;
+  width: 300px;
+  background-color: gold;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#tsarground {
+  position: absolute;
+  top: 1250px;
+  z-index: 1;
+  height: 150px;
+  width: 100%;
+  background-color: #8b7765;
+  padding-right: 18px;
+  margin-left: -10px;
+}
+#tsarmountains {
+  position: absolute;
+  top: 1250px;
+  right: 0;
+  z-index: 3;
+  height: 133px;
+  width: 400px;
+  background-image: url('../pics/bg2.png');
+  background-size: cover;
+}
+#tsarbg1 {
+  position: absolute;
+  top: 1400px;
+  z-index: 1;
+  height: 600px;
+  width: 100%;
+  background-image: url('../pics/walltexture.jpg');
+  background-size: cover;
+  padding-right: 18px;
+  margin-left: -10px;
+  border-top: 35px solid #afb7b5;
+}
+#tsarinfo2 {
+  position: absolute;
+  top: 1465px;
+  right: 40%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+  background-color: #7a807f;
+}
+#tsarinfo3 {
+  position: absolute;
+  top: 1465px;
+  right: 5%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+  background-color: #7a807f;
+}
+#tsarinfo4 {
+  position: absolute;
+  top: 1715px;
+  right: 40%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+  background-color: #7a807f;
 }
