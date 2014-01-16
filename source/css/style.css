@@ -292,12 +292,14 @@ header {
   width: 550px;
   margin-left: 7%;
   margin-top: 7%;
+  border: dashed 5px white;
 }
 #chalkText3 {
   position: absolute;
   margin-left: 7%;
   height: auto;
   width: 25%;
+  border: dotted 5px white;
 }
 #chalkText4 {
   position: absolute;
@@ -305,6 +307,7 @@ header {
   height: auto;
   width: 25%;
   margin-top: 475px;
+  border: dotted 5px white;
 }
 #chalkText5 {
   position: absolute;
@@ -312,6 +315,7 @@ header {
   height: auto;
   width: 25%;
   margin-top: 800px;
+  border: dotted 5px white;
 }
 #sec2 {
   position: absolute;
@@ -380,12 +384,7 @@ header {
   background-color: #394450;
 }
 #richland .bread {
-  background-color: #546375;
-  background-image: -webkit-linear-gradient(bottom, #546375, #394450);
-  background-image: -moz-linear-gradient(bottom, #546375, #394450);
-  background-image: -o-linear-gradient(bottom, #546375, #394450);
-  background-image: -ms-linear-gradient(bottom, #546375, #394450);
-  background-image: linear-gradient(bottom, #546375, #394450);
+  background-color: #262d35;
   margin: -10px 0 -10px 0;
   padding: 10px 0 10px 0;
   padding-right: 25px;
@@ -404,12 +403,7 @@ header {
   background-color: #394450;
 }
 #alamos .bread {
-  background-color: #546375;
-  background-image: -webkit-linear-gradient(bottom, #546375, #394450);
-  background-image: -moz-linear-gradient(bottom, #546375, #394450);
-  background-image: -o-linear-gradient(bottom, #546375, #394450);
-  background-image: -ms-linear-gradient(bottom, #546375, #394450);
-  background-image: linear-gradient(bottom, #546375, #394450);
+  background-color: #262d35;
   margin: -10px 0 -10px 0;
   padding: 10px 0 10px 0;
   padding-right: 25px;
@@ -428,12 +422,7 @@ header {
   background-color: #394450;
 }
 #oakridge .bread {
-  background-color: #546375;
-  background-image: -webkit-linear-gradient(bottom, #546375, #394450);
-  background-image: -moz-linear-gradient(bottom, #546375, #394450);
-  background-image: -o-linear-gradient(bottom, #546375, #394450);
-  background-image: -ms-linear-gradient(bottom, #546375, #394450);
-  background-image: linear-gradient(bottom, #546375, #394450);
+  background-color: #262d35;
   margin: -10px 0 -10px 0;
   padding: 10px 0 10px 0;
   padding-right: 25px;
@@ -450,6 +439,7 @@ header {
   height: auto;
   width: 35%;
   background-color: #7a807f;
+  border: solid 5px white;
 }
 #sec4 {
   position: absolute;
@@ -561,6 +551,7 @@ header {
   height: auto;
   width: 25%;
   background-color: #7b8fa4;
+  border: solid 5px white;
 }
 #trinityInfo2 {
   position: absolute;
@@ -570,6 +561,7 @@ header {
   height: auto;
   width: 25%;
   background-color: #7b8fa4;
+  border: solid 5px white;
 }
 #whitebg {
   position: absolute;
@@ -1306,7 +1298,7 @@ header {
 #sec9 {
   position: absolute;
   z-index: 1;
-  height: 2000px;
+  height: 2025px;
   width: 100%;
   float: left;
   margin-top: calc(16585px);
@@ -1453,7 +1445,7 @@ header {
 }
 #tsarmountains {
   position: absolute;
-  top: 1250px;
+  top: 1225px;
   right: 0;
   z-index: 3;
   height: 133px;
@@ -1502,4 +1494,382 @@ header {
   width: 25%;
   border: solid 5px white;
   background-color: #7a807f;
+}
+#sec10 {
+  position: absolute;
+  z-index: 0;
+  height: 2950px;
+  width: 100%;
+  float: left;
+  margin-top: calc(18610px);
+  padding-right: 18px;
+  margin-left: -10px;
+}
+#kennedynik {
+  position: absolute;
+  right: 0;
+  height: 550px;
+  width: 100%;
+  background-image: url("../pics/kennedynik.jpg");
+  background-size: cover;
+}
+#keninfo1 {
+  position: absolute;
+  top: 100px;
+  right: 40%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+  background-color: #7a807f;
+}
+#keninfo2 {
+  position: absolute;
+  top: 400px;
+  right: 40%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: dashed 5px white;
+}
+#kennedyquote {
+  position: absolute;
+  top: 550px;
+  right: 0;
+  height: 400px;
+  width: 100%;
+  background-color: black;
+}
+#timelineheader {
+  position: absolute;
+  top: 950px;
+  left: 5%;
+  z-index: 1;
+  height: auto;
+  width: 25%;
+  background-color: #1b1f25;
+}
+#timelinebg {
+  position: absolute;
+  top: 950px;
+  right: 0;
+  height: 2000px;
+  width: 100%;
+  background-image: url("../pics/timelinetex.jpg");
+  background-size: cover;
+}
+#timelineinfo1 {
+  position: absolute;
+  top: 1150px;
+  left: 5%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+}
+#timelineinfo11 {
+  position: absolute;
+  top: 1100px;
+  right: 25%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: dashed 5px white;
+}
+#timelineinfo8 {
+  position: absolute;
+  top: 1350px;
+  left: 5%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+}
+#timelineinfo9 {
+  position: absolute;
+  top: 1575px;
+  left: 5%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+}
+#timelineinfo10 {
+  position: absolute;
+  top: 1800px;
+  left: 5%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+}
+#timelinetests {
+  position: absolute;
+  top: 2000px;
+  left: 5%;
+  height: 800px;
+  width: 25%;
+}
+#timelinetests .info {
+  font-weight: bold;
+  font-size: 1.1em;
+  border: dotted 2px white;
+}
+#forties {
+  position: absolute;
+  height: 14.29%;
+  width: 1%;
+  background-color: #e4eeeb;
+}
+#fortiesnum {
+  position: absolute;
+  left: 65%;
+  height: 14.29%;
+  width: 35%;
+}
+#fifties {
+  position: absolute;
+  top: 14.29%;
+  height: 14.29%;
+  width: 41%;
+  background-color: #afb7b5;
+}
+#fiftiesnum {
+  position: absolute;
+  top: 14.29%;
+  left: 65%;
+  height: 14.29%;
+  width: 35%;
+}
+#sixties {
+  position: absolute;
+  top: calc(28.58%);
+  height: 14.29%;
+  width: 100%;
+  background-color: #7a807f;
+}
+#sixtiesnum {
+  position: absolute;
+  top: calc(28.58%);
+  left: 65%;
+  height: 14.29%;
+  width: 35%;
+}
+#seventies {
+  position: absolute;
+  top: calc(42.87%);
+  height: 14.29%;
+  width: 78%;
+  background-color: #585c5b;
+}
+#seventiesnum {
+  position: absolute;
+  top: calc(42.87%);
+  left: 65%;
+  height: 14.29%;
+  width: 35%;
+}
+#eighties {
+  position: absolute;
+  top: calc(57.16%);
+  height: 14.29%;
+  width: 62%;
+  background-color: #353736;
+}
+#eightiesnum {
+  position: absolute;
+  top: calc(57.16%);
+  left: 65%;
+  height: 14.29%;
+  width: 35%;
+}
+#nineties {
+  position: absolute;
+  top: calc(71.45%);
+  height: 14.29%;
+  width: 9%;
+  background-color: #121212;
+}
+#ninetiesnum {
+  position: absolute;
+  top: calc(71.45%);
+  left: 65%;
+  height: 14.29%;
+  width: 35%;
+}
+#zeros {
+  position: absolute;
+  top: calc(85.74%);
+  height: 14.29%;
+  width: 0.4%;
+  background-color: black;
+}
+#zerosnum {
+  position: absolute;
+  top: calc(85.74%);
+  left: 65%;
+  height: 14.29%;
+  width: 35%;
+}
+#timelineinfo2 {
+  position: absolute;
+  top: 1350px;
+  right: 10%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: dotted 5px white;
+  background-color: #1b1f25;
+}
+#flag1 {
+  position: absolute;
+  top: 1350px;
+  right: 45%;
+  height: 175px;
+  width: 175px;
+  background-image: url("../pics/gb.png");
+  background-size: cover;
+  background-position: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: solid 12px #1b1f25;
+}
+#timelineinfo3 {
+  position: absolute;
+  top: 1600px;
+  right: 10%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: dotted 5px white;
+  background-color: #1b1f25;
+}
+#flag2 {
+  position: absolute;
+  top: 1600px;
+  right: 45%;
+  height: 175px;
+  width: 175px;
+  background-image: url("../pics/france.png");
+  background-size: cover;
+  background-position: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: solid 12px #1b1f25;
+}
+#timelineinfo4 {
+  position: absolute;
+  top: 1850px;
+  right: 10%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: dotted 5px white;
+  background-color: #1b1f25;
+}
+#flag3 {
+  position: absolute;
+  top: 1850px;
+  right: 45%;
+  height: 175px;
+  width: 175px;
+  background-image: url("../pics/china.png");
+  background-size: cover;
+  background-position: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: solid 12px #1b1f25;
+}
+#timelineinfo5 {
+  position: absolute;
+  top: 2100px;
+  right: 10%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: dotted 5px white;
+  background-color: #1b1f25;
+}
+#flag4 {
+  position: absolute;
+  top: 2100px;
+  right: 45%;
+  height: 175px;
+  width: 175px;
+  background-image: url("../pics/india.png");
+  background-size: cover;
+  background-position: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: solid 12px #1b1f25;
+}
+#timelineinfo6 {
+  position: absolute;
+  top: 2350px;
+  right: 10%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: dotted 5px white;
+  background-color: #1b1f25;
+}
+#flag5 {
+  position: absolute;
+  top: 2350px;
+  right: 45%;
+  height: 175px;
+  width: 175px;
+  background-image: url("../pics/pakistan.png");
+  background-size: cover;
+  background-position: 55%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: solid 12px #1b1f25;
+}
+#timelineinfo7 {
+  position: absolute;
+  top: 2600px;
+  right: 10%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: dotted 5px white;
+  background-color: #1b1f25;
+}
+#flag6 {
+  position: absolute;
+  top: 2600px;
+  right: 45%;
+  height: 175px;
+  width: 175px;
+  background-image: url("../pics/nk.png");
+  background-size: cover;
+  background-position: 30%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: solid 12px #1b1f25;
 }

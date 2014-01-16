@@ -12,13 +12,11 @@
 @fontlinks:Arial;
 @chalkboardfont:'Delius Unicase', cursive;
 
-
 @fontcolor: #fff;
 @h1size: 5.5em;
 @basecolor: #000;
 @baseblue:#262d35;
 @basegrey:#afb7b5;
-
 
 @sec1height: 1750px;
 @sec2height: 550px;
@@ -28,7 +26,8 @@
 @sec6height: 1485px;
 @sec7height: 2200px;
 @sec8height: 1000px;
-@sec9height: 2000px;
+@sec9height: 2025px;
+@sec10height: 2950px;
 
 
 // ----------
@@ -410,26 +409,31 @@ header{
 	.dimensions(auto, 550px);	
 	margin-left: 7%;
 	margin-top: 7%;
+	.border(dashed, 5px, white);	
 }
 
 #chalkText3{	
 	position: absolute;
 	margin-left: 7%;
-	.dimensions(auto, 25%);		
+	.dimensions(auto, 25%);	
+	.border(dotted, 5px, white);		
 }
 
 #chalkText4{	
 	position: absolute;
-		right: 7%;
+	right: 7%;
 	.dimensions(auto, 25%);	
-		margin-top: 475px;	
+	margin-top: 475px;
+	.border(dotted, 5px, white);		
 }
 
 #chalkText5{	
 	position: absolute;
-		margin-left: 7%;
+	margin-left: 7%;
 	.dimensions(auto, 25%);	
 	margin-top: 800px;
+	.border(dotted, 5px, white);	
+
 }
 
 #sec2{
@@ -499,7 +503,7 @@ header{
 	background-color:@baseblue * 1.5;
 
 	.bread{
-		.gradient(bottom, @baseblue * 2.2, @baseblue * 1.5);
+		background-color: @baseblue;
 		margin: -10px 0 -10px 0;
 		padding:  10px 0 10px 0;
 		.textPadding();
@@ -519,7 +523,7 @@ header{
 	background-color:@baseblue * 1.5;
 	
 	.bread{
-		.gradient(bottom, @baseblue * 2.2, @baseblue * 1.5);
+		background-color: @baseblue;
 		margin: -10px 0 -10px 0;
 		padding:  10px 0 10px 0;
 		.textPadding();
@@ -539,7 +543,7 @@ header{
 	background-color:@baseblue * 1.5;
 	
 	.bread{
-		.gradient(bottom, @baseblue * 2.2, @baseblue * 1.5);
+		background-color: @baseblue;
 		margin: -10px 0 -10px 0;
 		padding:  10px 0 10px 0;
 		.textPadding();
@@ -557,6 +561,7 @@ header{
 	z-index: 2;
 	.dimensions(auto, 35%);
 	background-color: @basegrey * 0.7;
+	.border(solid, 5px, white);	
 }
 
 #sec4{
@@ -659,6 +664,8 @@ header{
 	z-index: 2;
 	.dimensions(auto, 25%);
 	background-color: #b0ccea * 0.7;
+		.border(solid, 5px, white);	
+
 }
 
 #trinityInfo2{
@@ -668,6 +675,8 @@ header{
 	z-index: 2;
 	.dimensions(auto, 25%);
 	background-color: #b0ccea * 0.7;
+		.border(solid, 5px, white);	
+
 }
 
 #whitebg{
@@ -1504,7 +1513,7 @@ header{
 
 #tsarmountains{
 	position: absolute;
-	top:1250px;	
+	top:1225px;	
 	right:0;
 	z-index: 3;
 	.dimensions(133px, 400px);
@@ -1554,3 +1563,355 @@ header{
 	background-color: @basegrey * 0.7;	
 }
 
+#sec10{
+	position: absolute;
+	z-index: 0;
+	.dimensions(@sec10height, 100%);	
+	float: left;
+	margin-top: calc(@sec1height + @sec2height + @sec3height + @sec4height +  @sec5height + @sec6height + @sec7height + @sec8height + @sec9height);
+	.marginFixSection();
+}	
+
+#kennedynik{
+	position: absolute;
+	right:0;
+	.dimensions(550px, 100%);
+	background-image: url("../pics/kennedynik.jpg");	
+	background-size: cover;
+}
+
+#keninfo1{
+	position: absolute;
+	top:100px;
+	right:40%;
+	z-index: 4;
+	.dimensions(auto, 25%);
+	.border(solid, 5px, white);	
+	background-color: @basegrey * 0.7;	
+}
+
+#keninfo2{
+	position: absolute;
+	top:400px;
+	right:40%;
+	z-index: 4;
+	.dimensions(auto, 25%);
+	.border(dashed, 5px, white);	
+}
+
+#kennedyquote{
+	position: absolute;
+	top:550px;
+	right:0;
+	.dimensions(400px, 100%);
+	background-color: black;
+}
+
+#timelineheader{
+	position: absolute;
+	top: 950px;	
+	left:5%;
+	z-index: 1;
+	.dimensions(auto, 25%);
+	background-color: @baseblue * 0.7;
+}
+
+
+#timelinebg{
+	position: absolute;
+	top:950px;
+	right:0;
+	.dimensions(2000px, 100%);
+	background-image: url("../pics/timelinetex.jpg");	
+	background-size: cover;
+}
+
+#timelineinfo1{
+	position: absolute;
+	top:1150px;
+	left:5%;
+	z-index: 4;
+	.dimensions(auto, 25%);
+	.border(solid, 5px, white);	
+}
+
+#timelineinfo11{
+	position: absolute;
+	top:1100px;
+	right:25%;
+	z-index: 4;
+	.dimensions(auto, 25%);
+	.border(dashed, 5px, white);	
+}
+
+#timelineinfo8{
+	position: absolute;
+	top:1350px;
+	left:5%;
+	z-index: 4;
+	.dimensions(auto, 25%);
+	.border(solid, 5px, white);	
+}
+
+#timelineinfo9{
+	position: absolute;
+	top:1575px;
+	left:5%;
+	z-index: 4;
+	.dimensions(auto, 25%);
+	.border(solid, 5px, white);	
+}
+
+#timelineinfo10{
+	position: absolute;
+	top:1800px;
+	left:5%;
+	z-index: 4;
+	.dimensions(auto, 25%);
+	.border(solid, 5px, white);	
+}
+
+#timelinetests{
+	position: absolute;
+	top:2000px;
+	left:5%;
+	.dimensions(800px, 25%);
+
+	.info{
+		font-weight: bold;
+		font-size: @h1size * 0.2;
+		.border(dotted, 2px, white);	
+	}
+}
+
+#forties{
+	position: absolute;	
+	.dimensions(14.29%, 1%);
+	background-color: @basegrey * 1.3;
+}
+
+#fortiesnum{
+	position: absolute;	
+	left:65%;
+	.dimensions(14.29%, 35%);
+}
+
+#fifties{
+	position: absolute;	
+	top:14.29%;
+	.dimensions(14.29%, 41%);
+	background-color: @basegrey;
+}
+
+#fiftiesnum{
+	position: absolute;	
+	top:14.29%;
+	left:65%;
+	.dimensions(14.29%, 35%);
+}
+
+#sixties{
+	position: absolute;	
+	top:calc(14.29% * 2);
+	.dimensions(14.29%, 100%);
+	background-color: @basegrey * 0.7;
+}
+
+#sixtiesnum{
+	position: absolute;	
+	top:calc(14.29% * 2);
+	left:65%;
+	.dimensions(14.29%, 35%);
+}
+
+#seventies{
+	position: absolute;	
+	top:calc(14.29% * 3);
+	.dimensions(14.29%, 78%);
+	background-color: @basegrey * 0.5;
+}
+
+#seventiesnum{
+	position: absolute;	
+	top:calc(14.29% * 3);
+	left:65%;
+	.dimensions(14.29%, 35%);
+}
+
+#eighties{
+	position: absolute;	
+	top:calc(14.29% * 4);
+	.dimensions(14.29%, 62%);
+	background-color: @basegrey * 0.3;
+}
+
+#eightiesnum{
+	position: absolute;	
+	top:calc(14.29% * 4);
+	left:65%;
+	.dimensions(14.29%, 35%);
+}
+
+#nineties{
+	position: absolute;	
+	top:calc(14.29% * 5);
+	.dimensions(14.29%, 9%);
+	background-color: @basegrey * 0.1;
+}
+
+#ninetiesnum{
+	position: absolute;	
+	top:calc(14.29% * 5);
+	left:65%;
+	.dimensions(14.29%, 35%);
+}
+
+#zeros{
+	position: absolute;	
+	top:calc(14.29% * 6);
+	.dimensions(14.29%, 0.4%);
+	background-color: black;	
+}
+
+#zerosnum{
+	position: absolute;	
+	top:calc(14.29% * 6);
+	left:65%;
+	.dimensions(14.29%, 35%);
+}
+
+
+#timelineinfo2{
+	position: absolute;
+	top:1350px;
+	right:10%;
+	z-index: 4;
+	.dimensions(auto, 25%);
+	.border(dotted, 5px, white);	
+	background-color: @baseblue * 0.7;	
+}
+
+#flag1{
+	position: absolute;
+	top:1350px;
+	right:45%;
+	.dimensions(175px, 175px);
+	background-image: url("../pics/gb.png");
+	background-size: cover;	
+	background-position: center;
+	.border-radius(50%);
+	.border(solid, 12px, @baseblue * 0.7);	
+
+}
+
+#timelineinfo3{
+	position: absolute;
+	top:1600px;
+	right:10%;
+	z-index: 4;
+	.dimensions(auto, 25%);
+	.border(dotted, 5px, white);	
+	background-color: @baseblue * 0.7;	
+}
+
+#flag2{
+	position: absolute;
+	top:1600px;
+	right:45%;
+	.dimensions(175px, 175px);
+	background-image: url("../pics/france.png");
+	background-size: cover;	
+	background-position: center;
+	.border-radius(50%);
+	.border(solid, 12px, @baseblue * 0.7);	
+
+}
+
+#timelineinfo4{
+	position: absolute;
+	top:1850px;
+	right:10%;
+	z-index: 4;
+	.dimensions(auto, 25%);
+	.border(dotted, 5px, white);	
+	background-color: @baseblue * 0.7;	
+}
+
+#flag3{
+	position: absolute;
+	top:1850px;
+	right:45%;
+	.dimensions(175px, 175px);
+	background-image: url("../pics/china.png");
+	background-size: cover;	
+	background-position: 0;
+	.border-radius(50%);
+	.border(solid, 12px, @baseblue * 0.7);	
+
+}
+
+#timelineinfo5{
+	position: absolute;
+	top:2100px;
+	right:10%;
+	z-index: 4;
+	.dimensions(auto, 25%);
+	.border(dotted, 5px, white);	
+	background-color: @baseblue * 0.7;	
+}
+
+#flag4{
+	position: absolute;
+	top:2100px;
+	right:45%;
+	.dimensions(175px, 175px);
+	background-image: url("../pics/india.png");
+	background-size: cover;	
+	background-position: center;
+	.border-radius(50%);
+	.border(solid, 12px, @baseblue * 0.7);		
+}
+
+#timelineinfo6{
+	position: absolute;
+	top:2350px;
+	right:10%;
+	z-index: 4;
+	.dimensions(auto, 25%);
+	.border(dotted, 5px, white);	
+	background-color: @baseblue * 0.7;	
+}
+
+#flag5{
+	position: absolute;
+	top:2350px;
+	right:45%;
+	.dimensions(175px, 175px);
+	background-image: url("../pics/pakistan.png");
+	background-size: cover;	
+	background-position: 55%;
+	.border-radius(50%);
+	.border(solid, 12px, @baseblue * 0.7);		
+}
+
+#timelineinfo7{
+	position: absolute;
+	top:2600px;
+	right:10%;
+	z-index: 4;
+	.dimensions(auto, 25%);
+	.border(dotted, 5px, white);	
+	background-color: @baseblue * 0.7;	
+}
+
+#flag6{
+	position: absolute;
+	top:2600px;
+	right:45%;
+	.dimensions(175px, 175px);
+	background-image: url("../pics/nk.png");
+	background-size: cover;	
+	background-position: 30%;
+	.border-radius(50%);
+	.border(solid, 12px, @baseblue * 0.7);	
+}
