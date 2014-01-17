@@ -5,5 +5,6 @@ function setPlaySpeed()
   video.playbackRate=0.75;
   } 
 
-
 window.onload = setPlaySpeed();
+
+

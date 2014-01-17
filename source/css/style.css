@@ -15,6 +15,7 @@
 body {
   background-color: black;
   overflow-x: hidden;
+  height: calc(22560px);
 }
 h1 {
   color: white;
@@ -77,7 +78,7 @@ h4 {
 #menu {
   height: 40px;
   width: 100%;
-  background-color: green;
+  background-color: white;
 }
 nav {
   float: right;
@@ -126,28 +127,13 @@ header {
   margin-top: 32%;
   width: 250px;
   height: auto;
-  background-color: #262d35;
+  background-color: #0d090e;
   border: dashed 5px white;
 }
 .boxFooter {
   width: 100%;
   height: 20px;
-  background-color: #352726;
-}
-#coloroverlay {
-  width: 100%;
-  height: 75%;
-  background-color: transparent;
-  background-image: -webkit-linear-gradient(bottom, transparent, black);
-  background-image: -moz-linear-gradient(bottom, transparent, black);
-  background-image: -o-linear-gradient(bottom, transparent, black);
-  background-image: -ms-linear-gradient(bottom, transparent, black);
-  background-image: linear-gradient(bottom, transparent, black);
-  opacity: 0.8;
-  position: absolute;
-  z-index: 0;
-  margin-top: -10px;
-  margin-left: -7px;
+  background-color: #0b0e10;
 }
 #headvideo {
   position: absolute;
@@ -160,7 +146,7 @@ header {
 }
 #cont {
   position: absolute;
-  height: auto;
+  height: calc(22560px);
   width: 100%;
   margin-top: 50%;
 }
@@ -292,7 +278,6 @@ header {
   width: 550px;
   margin-left: 7%;
   margin-top: 7%;
-  border: dashed 5px white;
 }
 #chalkText3 {
   position: absolute;
@@ -381,10 +366,10 @@ header {
   z-index: 2;
   height: auto;
   width: 200px;
-  background-color: #394450;
+  background-color: #262d35;
 }
 #richland .bread {
-  background-color: #262d35;
+  background-color: #313b45;
   margin: -10px 0 -10px 0;
   padding: 10px 0 10px 0;
   padding-right: 25px;
@@ -400,10 +385,10 @@ header {
   z-index: 2;
   height: auto;
   width: 200px;
-  background-color: #394450;
+  background-color: #262d35;
 }
 #alamos .bread {
-  background-color: #262d35;
+  background-color: #313b45;
   margin: -10px 0 -10px 0;
   padding: 10px 0 10px 0;
   padding-right: 25px;
@@ -419,10 +404,10 @@ header {
   z-index: 2;
   height: auto;
   width: 200px;
-  background-color: #394450;
+  background-color: #262d35;
 }
 #oakridge .bread {
-  background-color: #262d35;
+  background-color: #313b45;
   margin: -10px 0 -10px 0;
   padding: 10px 0 10px 0;
   padding-right: 25px;
@@ -1498,7 +1483,7 @@ header {
 #sec10 {
   position: absolute;
   z-index: 0;
-  height: 2950px;
+  height: 3450px;
   width: 100%;
   float: left;
   margin-top: calc(18610px);
@@ -1553,7 +1538,7 @@ header {
   position: absolute;
   top: 950px;
   right: 0;
-  height: 2000px;
+  height: 2500px;
   width: 100%;
   background-image: url("../pics/timelinetex.jpg");
   background-size: cover;
@@ -1872,4 +1857,79 @@ header {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: solid 12px #1b1f25;
+}
+#timelineinfo12 {
+  position: absolute;
+  top: 2925px;
+  left: 5%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+}
+#timelineinfo13 {
+  position: absolute;
+  top: 3125px;
+  left: 5%;
+  z-index: 4;
+  height: auto;
+  width: 25%;
+  border: solid 5px white;
+}
+#footer {
+  position: absolute;
+  z-index: 0;
+  height: 500px;
+  width: 100%;
+  float: left;
+  margin-top: calc(22060px);
+  padding-right: 18px;
+  margin-left: -10px;
+  background-color: black;
+}
+#about {
+  position: absolute;
+  z-index: 0;
+  top: 25px;
+  left: 5%;
+  height: auto;
+  width: 35%;
+}
+#contactform {
+  position: absolute;
+  z-index: 0;
+  top: 25px;
+  left: 50%;
+  height: auto;
+  width: 50%;
+}
+#contactform input,
+#contactform textarea {
+  padding: 5px;
+  width: 471px;
+  margin: 0px 0px 10px 0px;
+  border: solid 2px black;
+  background-color: #585c5b;
+  color: white;
+}
+#contactform textarea {
+  height: 90px;
+}
+#contactform textarea:focus,
+#contactform input:focus {
+  border: solid 2px #262d35;
+}
+#contactform input.submit-button {
+  width: 100px;
+  float: left;
+  margin-left: 165px;
+}
+label {
+  float: left;
+  text-align: right;
+  margin-right: 15px;
+  width: 100px;
+  padding-top: 5px;
+  font-size: 1.4em;
+  color: white;
 }
