@@ -26,8 +26,8 @@
 @sec6height: 1485px;
 @sec7height: 2200px;
 @sec8height: 1000px;
-@sec9height: 2025px;
-@sec10height: 3450px;
+@sec9height: 2050px;
+@sec10height: 3500px;
 @contactheight: 500px;
 
 
@@ -204,33 +204,141 @@ h4{
 	width: 100%;
 }
 
-#top{
+#menu{
 	position: fixed;
 	z-index: 10;
-	height: 40px;
-	width: 80%;
+	height: 50px;
+	width: 87%;
 	background-color: @baseblue;	
 	margin-left:-15px;
 	margin-top: -10px;
-	opacity:0.8;
+	opacity:0.65;
+	border-bottom:thick solid white;
+	border-right:thick solid white;
+
+	a{
+		opacity:1.0;
+	}
+
+	p{
+		font-family: @sansserif;		
+		font-size: @h1size * 0.11;
+		font-weight: bold;
+		margin-left: 5px;
+		color:white;
+	}
 }
 
-#menu{
-	.dimensions(40px, 100%);		
-	background-color: white;
+
+#menutop{
+	position: absolute;	
+	z-index: 1;
+	.dimensions(50px, 4.11%);
+	background-color: black;	
+
+	video{
+		position: absolute;		
+		.dimensions(50px, 100%);
+	}
 }
 
-nav{
-	float: right;
-	margin-top: 10px;
-	.textPadding;
-	color: @fontcolor;
-		a{
-			color: @fontcolor;
-			font-family: @fontlinks;
-			font-weight: bold;
-			text-decoration: none;
-		}
+#menusec1{
+	position: absolute;
+	top:0;
+	left:4.11%;
+	z-index: 1;
+	.dimensions(50px, 10.5%);
+	background-image: url('../pics/menu/1.jpg');
+	background-size: cover;
+
+}
+
+
+#menusec2{
+	position: absolute;
+	top:0;
+	left:14.61%;
+	z-index: 1;
+	.dimensions(50px, 5.75%);
+	background-color: @basegrey;
+}
+
+#menusec3{
+	position: absolute;
+	top:0;
+	left:20.35%;
+	z-index: 1;
+	.dimensions(50px, 16.22%);
+	background-color: #0F0F0F;
+	background-image: url('../pics/menu/3.jpg');
+	background-size: contain;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+
+#menusec4{
+	position: absolute;
+	top:0;
+	left:36.57%;
+	z-index: 1;
+	.dimensions(50px, 21.16%);
+	background-image: url('../pics/menu/4.jpg');
+	background-size: 100% 300%;
+
+}
+
+#menusec5{
+	position: absolute;
+	top:0;
+	left:57.73%;
+	z-index: 1;
+	.dimensions(50px, 6.63%);
+	background-image: url('../pics/menu/5.jpg');
+	background-size: 100% 100%;}
+
+#menusec6{
+	position: absolute;
+	top:0;
+	left:64.36%;
+	z-index: 1;
+	.dimensions(50px, 9.86%);
+	background-color: #060005;
+	background-image: url('../pics/menu/6.jpg');
+	background-size: 100% 200%;
+	background-position: 0 30%;
+
+}
+
+
+#menusec7{
+	position: absolute;
+	top:0;
+	left:74.22%;
+	z-index: 1;
+	.dimensions(50px, 4.59%);
+	background-color: #CC0001;
+	background-image: url('../pics/menu/7.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat:no-repeat;}
+
+#menusec8{
+	position: absolute;
+	top:0;
+	left:78.71%;
+	z-index: 1;
+	.dimensions(50px, 13.36%);
+	background-color: @basecolor;
+}
+
+#menusec9{
+	position: absolute;
+	top:0;
+	left:92.07%;
+	z-index: 1;
+	.dimensions(50px, 7.93%);
+	background-image: url('../pics/menu/9.jpg');
+	background-size: 100% 100%;
 }
 
 header{
@@ -251,7 +359,7 @@ header{
 	float: left;	
 }
 
-#subtext{
+#titleinfo{
 	height: auto;
 	width: 100%;
 	float: left;
@@ -302,7 +410,6 @@ header{
 	float: left;
 	background-image: url("../pics/chalkboard.jpg");	
 	background-size: cover;
-	/*margin-top: 50%;*/
 	.marginFixSection();
 
 	img{				
@@ -1507,7 +1614,7 @@ header{
 	position: absolute;
 	top: 1400px;	
 	z-index: 1;
-	.dimensions(600px, 100%);
+	.dimensions(625px, 100%);
 	background-image: url('../pics/walltexture.jpg');
 	background-size: cover;
 	.marginFixSection();
@@ -1545,17 +1652,9 @@ header{
 	background-color: @basegrey * 0.7;	
 }
 
-#sec10{
-	position: absolute;
-	z-index: 0;
-	.dimensions(@sec10height, 100%);	
-	float: left;
-	margin-top: calc(@sec1height + @sec2height + @sec3height + @sec4height +  @sec5height + @sec6height + @sec7height + @sec8height + @sec9height);
-	.marginFixSection();
-}	
-
 #kennedynik{
 	position: absolute;
+	top:1950px;
 	right:0;
 	.dimensions(550px, 100%);
 	background-image: url("../pics/kennedynik.jpg");	
@@ -1564,7 +1663,7 @@ header{
 
 #keninfo1{
 	position: absolute;
-	top:100px;
+	top:2100px;
 	right:40%;
 	z-index: 4;
 	.dimensions(auto, 25%);
@@ -1574,7 +1673,7 @@ header{
 
 #keninfo2{
 	position: absolute;
-	top:400px;
+	top:2400px;
 	right:40%;
 	z-index: 4;
 	.dimensions(auto, 25%);
@@ -1583,11 +1682,21 @@ header{
 
 #kennedyquote{
 	position: absolute;
-	top:550px;
+	top:2550px;
 	right:0;
 	.dimensions(400px, 100%);
 	background-color: black;
 }
+
+
+#sec10{
+	position: absolute;
+	z-index: 0;
+	.dimensions(@sec10height, 100%);	
+	float: left;
+	margin-top: calc(@sec1height + @sec2height + @sec3height + @sec4height +  @sec5height + @sec6height + @sec7height + @sec8height + @sec9height);
+	.marginFixSection();
+}	
 
 #timelineheader{
 	position: absolute;
