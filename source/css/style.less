@@ -204,17 +204,18 @@ h4{
 	width: 100%;
 }
 
+
+
 #menu{
 	position: fixed;
 	z-index: 10;
-	height: 50px;
-	width: 87%;
+	.dimensions(50px, 81%);
 	background-color: @baseblue;	
 	margin-left:-15px;
 	margin-top: -10px;
 	opacity:0.65;
-	border-bottom:thick solid white;
-	border-right:thick solid white;
+	border-bottom:5px solid white;
+	border-right:5px solid white;
 
 	a{
 		opacity:1.0;
@@ -225,6 +226,7 @@ h4{
 		font-size: @h1size * 0.11;
 		font-weight: bold;
 		margin-left: 5px;
+		margin-top: 15px;
 		color:white;
 	}
 }
@@ -233,7 +235,7 @@ h4{
 #menutop{
 	position: absolute;	
 	z-index: 1;
-	.dimensions(50px, 4.11%);
+	.dimensions(50px, 5.5%);
 	background-color: black;	
 
 	video{
@@ -242,10 +244,11 @@ h4{
 	}
 }
 
+
 #menusec1{
 	position: absolute;
 	top:0;
-	left:4.11%;
+	left:5.5%;
 	z-index: 1;
 	.dimensions(50px, 10.5%);
 	background-image: url('../pics/menu/1.jpg');
@@ -253,22 +256,21 @@ h4{
 
 }
 
-
 #menusec2{
 	position: absolute;
 	top:0;
-	left:14.61%;
+	left:16%;
 	z-index: 1;
-	.dimensions(50px, 5.75%);
+	.dimensions(50px, 10.5%);
 	background-color: @basegrey;
 }
 
 #menusec3{
 	position: absolute;
 	top:0;
-	left:20.35%;
+	left:26.5%;
 	z-index: 1;
-	.dimensions(50px, 16.22%);
+	.dimensions(50px, 10.5%);
 	background-color: #0F0F0F;
 	background-image: url('../pics/menu/3.jpg');
 	background-size: contain;
@@ -279,9 +281,9 @@ h4{
 #menusec4{
 	position: absolute;
 	top:0;
-	left:36.57%;
+	left:37%;
 	z-index: 1;
-	.dimensions(50px, 21.16%);
+	.dimensions(50px, 10.5%);
 	background-image: url('../pics/menu/4.jpg');
 	background-size: 100% 300%;
 
@@ -290,18 +292,18 @@ h4{
 #menusec5{
 	position: absolute;
 	top:0;
-	left:57.73%;
+	left:47.5%;
 	z-index: 1;
-	.dimensions(50px, 6.63%);
+	.dimensions(50px, 10.5%);
 	background-image: url('../pics/menu/5.jpg');
 	background-size: 100% 100%;}
 
 #menusec6{
 	position: absolute;
 	top:0;
-	left:64.36%;
+	left:58%;
 	z-index: 1;
-	.dimensions(50px, 9.86%);
+	.dimensions(50px, 10.5%);
 	background-color: #060005;
 	background-image: url('../pics/menu/6.jpg');
 	background-size: 100% 200%;
@@ -313,9 +315,9 @@ h4{
 #menusec7{
 	position: absolute;
 	top:0;
-	left:74.22%;
+	left:68.5%;
 	z-index: 1;
-	.dimensions(50px, 4.59%);
+	.dimensions(50px, 10.5%);
 	background-color: #CC0001;
 	background-image: url('../pics/menu/7.png');
 	background-size: contain;
@@ -325,18 +327,18 @@ h4{
 #menusec8{
 	position: absolute;
 	top:0;
-	left:78.71%;
+	left:79%;
 	z-index: 1;
-	.dimensions(50px, 13.36%);
+	.dimensions(50px, 10.5%);
 	background-color: @basecolor;
 }
 
 #menusec9{
 	position: absolute;
 	top:0;
-	left:92.07%;
+	left:89.5%;
 	z-index: 1;
-	.dimensions(50px, 7.93%);
+	.dimensions(50px, 10.5%);
 	background-image: url('../pics/menu/9.jpg');
 	background-size: 100% 100%;
 }
@@ -434,15 +436,15 @@ header{
 	margin-top: 15px;
 }
 
-#chalkHeader{	
+#beginningheader{	
 	.dimensions(auto, 50%);		
 }
 
-#infobit1{	
+#beginninginfo1{	
 	.dimensions(auto, 50%);	
 }
 
-#infobit2{	
+#beginninginfo2{	
 	.dimensions(auto, 50%);		
 }
 
@@ -559,7 +561,7 @@ header{
 
 	.bread{
 		font-family: @sansserif;
-		font-size: @h1size * 0.17;
+		font-size: @h1size * 0.15;
 		display: none;
 
 	}
